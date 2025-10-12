@@ -1,0 +1,50 @@
+=== Local AI Monitor Started Sat Oct 11 16:37:57 +0630 2025 ===
+Watching: /Users/zwezayar/third-officer-maintenance-system/docs/risk_analysis.json
+[2025-10-11 16:37:57]
+--- Ollama Processes ---
+zwezayar 22175  341.5 /usr/local/Cellar/ollama/0.12.3/bin/ollama
+zwezayar 22737  0.0   ollama
+zwezayar 21802  0.0   ollama
+--- File Progress ---
+Current size: 4.0K (~0.1%)
+--- Active Port ---
+ollama  21802 zwezayar    3u  IPv4  0x2bd008cdd50d455      0t0  TCP localhost:11434 (LISTEN)
+----------------------------------------
+=== Local-AI Monitor Started Sat Oct 11 16:39:07 +0630 2025 ===
+Watching: /Users/zwezayar/third-officer-maintenance-system/docs/risk_analysis.json
+[2025-10-11 16:39:07]
+🟢  Ollama server running (port 11434).
+--- Ollama Processes ---
+zwezayar 22175  359.9 /usr/local/Cellar/ollama/0.12.3/bin/ollama
+zwezayar 21802  0.0   ollama
+zwezayar 22737  0.0   ollama
+--- File Progress ---
+Current size: 4.0K (~0.1 %)
+----------------------------------------
+[2025-10-11 16:40:07]
+🟢  Ollama server running (port 11434).
+--- Ollama Processes ---
+zwezayar 22175  309.0 /usr/local/Cellar/ollama/0.12.3/bin/ollama
+zwezayar 22737  0.0   ollama
+zwezayar 21802  0.0   ollama
+--- File Progress ---
+Current size: 4.0K (~0.1 %)
+----------------------------------------
+[2025-10-11 16:41:07]
+🟢  Ollama server running (port 11434).
+--- Ollama Processes ---
+zwezayar 22175  319.4 /usr/local/Cellar/ollama/0.12.3/bin/ollama
+zwezayar 22737  0.0   ollama
+zwezayar 21802  0.0   ollama
+--- File Progress ---
+Current size: 4.0K (~0.1 %)
+----------------------------------------
+[2025-10-11 16:42:08]
+🟢  Ollama server running (port 11434).
+--- Ollama Processes ---
+zwezayar 22175  335.2 /usr/local/Cellar/ollama/0.12.3/bin/ollama
+zwezayar 22737  0.0   ollama
+zwezayar 21802  0.0   ollama
+--- File Progress ---
+Current size: 8.0K (~0.1 %)
+----------------------------------------

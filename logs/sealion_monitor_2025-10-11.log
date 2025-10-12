@@ -1,0 +1,22 @@
+=== SEA-LION Monitor Started Sat Oct 11 16:35:56 +0630 2025 ===
+Watching: /Users/zwezayar/third-officer-maintenance-system/docs/risk_analysis.json
+[2025-10-11 16:35:56]
+--- Ollama Processes ---
+zwezayar 22175  325.2 /usr/local/Cellar/ollama/0.12.3/bin/ollama
+zwezayar 22737  0.0   ollama
+zwezayar 21802  0.0   ollama
+--- File Progress ---
+Current size: 4.0K (~0.0%)
+--- Active Port ---
+ollama  21802 zwezayar    3u  IPv4  0x2bd008cdd50d455      0t0  TCP localhost:11434 (LISTEN)
+----------------------------------------
+[2025-10-11 16:36:56]
+--- Ollama Processes ---
+zwezayar 22175  314.4 /usr/local/Cellar/ollama/0.12.3/bin/ollama
+zwezayar 22737  0.0   ollama
+zwezayar 21802  0.0   ollama
+--- File Progress ---
+Current size: 4.0K (~0.0%)
+--- Active Port ---
+ollama  21802 zwezayar    3u  IPv4  0x2bd008cdd50d455      0t0  TCP localhost:11434 (LISTEN)
+----------------------------------------

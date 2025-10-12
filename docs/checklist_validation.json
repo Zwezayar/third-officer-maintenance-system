@@ -1,0 +1,26 @@
+{
+  "valid": false,
+  "issues": [
+    {
+      "type": "incomplete_data",
+      "message": "The provided data appears to be a truncated version of a larger document. The last entries contain unrelated information, such as legal disclaimers, which should not be part of the fire safety audit checklist."
+    },
+    {
+      "type": "frequency_consistency",
+      "message": "There are inconsistencies in the frequency specifications for various fire safety checks. For example, '5-yearly' and '2-yearly' appear multiple times with slightly different phrasing. Standardization is recommended."
+    },
+    {
+      "type": "duplicate_entries",
+      "message": "Several entries repeat similar requirements, such as checking fuel shut-off controls and flushing ro-ro deck deluge systems. These can be consolidated for clarity."
+    },
+    {
+      "type": "regulation_linkage",
+      "message": "Some entries reference SOLAS regulations but lack specific reference numbers or details (e.g., 'SOLAS V/19-1', 'STCW Code/Sec. A-VIII/2.34.2'). Including these references would improve the checklist's accuracy."
+    },
+    {
+      "type": "actionable_items",
+      "message": "Several entries contain vague descriptions that lack specific actions (e.g., 'Verify proper operation of all water mist...'). These should be updated to include concrete steps for implementation."
+    }
+  ]
+}
+

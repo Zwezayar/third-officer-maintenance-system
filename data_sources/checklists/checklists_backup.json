@@ -1,0 +1,1763 @@
+{
+    "lsa": [
+        {
+            "category": "lsa",
+            "item": "LIFE-SAVING APPLIANCES",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "have analysed data relating to life-saving appliances, including",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "this re-usable checklist, which highlights the most common",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Marine Life-Saving Appliances",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "office. It is essential that certification is up-to-date and valid.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Paris MOU - www.parismou.org",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Tokyo MOU - www.tokyo-mou.org",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "USCG - http://homeport.uscg.mil/mycg/portal/ep/home.do",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "provides guidelines on detentions [ISBN: 92-801-5099-5].",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Marine Life-Saving Appliances",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Life-Saving Appliance deficiencies",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "The following are the most common Life-Saving",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Marine Life-Saving Appliances",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "1.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "2.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "3.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "",
+            "description": "certificate of approval and for self-contained air",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "support system, fire protection and on-load release",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "4.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "5.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "6.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "7.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "8.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "9.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Marine Life-Saving Appliances",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "1.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Instructions for on-board maintenance or a",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "ship-board planned maintenance programme",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "2.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "SOLAS training manuals and on-board training",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "3.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "4.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "5.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "6.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "7.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Inspection and testing of life-saving and",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "",
+            "description": "includes on-load release gear, where fitted",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "8.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "9.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "10.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "11.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Weekly and on-load engine tests conducted and",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Weekly"
+        },
+        {
+            "category": "lsa",
+            "item": "12.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "EPIRB shore-based maintenance",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "13.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Marine Life-Saving Appliances",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "14.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Servicing of fire-extinguishers in lifeboats",
+            "description": "",
+            "regulation": "SOLAS III/20",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "15.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Marine Life-Saving Appliances",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "1.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "",
+            "description": "cut-out switches properly maintained",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "2.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "3.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "non-skid coating.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Marine Life-Saving Appliances",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "1.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "2.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "3.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "4.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "5.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "6.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "7.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "8.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "9.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "10.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Marine Life-Saving Appliances",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "11.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "12.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "13.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "14.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "",
+            "description": "white painted or retro-reflective tape for night",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "15.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "16.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "On-board air system, where provided, in good",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "17.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Overall water-spray systems, where provided,",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "18.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "19.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "VHF radio-telephone, where provided, in good",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Marine Life-Saving Appliances",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "5. Free-fall lifeboats",
+            "description": "",
+            "regulation": "SOLAS III/20",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "1.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "2.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "3.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Marine Life-Saving Appliances",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "1.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "2.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "3.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "4.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "5.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "6.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "found in the LSA Code - International Life-Saving Appliance Code.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Marine Life-Saving Appliances",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "1.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "2.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "3.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "4.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "5.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "6.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "7.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "8.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "lifejackets. This is also applicable to the aft liferaft of many ro-ro ships",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Marine Life-Saving Appliances",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "1.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "2.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Inventory correct and up-to-date",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "3.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "4.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "5.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "6.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "7.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "8.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Marine Life-Saving Appliances",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "1.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "2.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "3.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "4.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Radio life-saving appliances",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "",
+            "description": "float-free EPIRB checked for date verification of",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Marine Life-Saving Appliances",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "5.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "2-way radiotelephone apparatus for survival",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "6.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "7.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "2. In the case of a stern-launched freefall lifeboat, one SART is kept on",
+            "description": "",
+            "regulation": "SOLAS III/20",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Marine Life-Saving Appliances",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "1.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "2.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "On-board training and instructions",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "3.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "4.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Marine Life-Saving Appliances",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "activities cover shipping, railways, other land-based industries and oil and",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "lsa",
+            "item": "Marine Life-saving Appliances",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        }
+    ],
+    "ffa": [
+        {
+            "category": "ffa",
+            "item": "Records of the inspections shall be carried on board of the ship, or may be computer-based. In cases where the",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "entered in the log-book.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "maintenance-safeq@dnvgl.com",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "SOLAS II-1/3-9.3",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "SOLAS II-1/3-9.3",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "SOLAS II-1/3-9.3",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "5-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Replacement of first-aid outfit and anti-seasickness medicine of lifeboat",
+            "description": "",
+            "regulation": "SOLAS III/20",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Maintenance of hydrostatic release units (non-disposable)",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Immersion suits and anti-exposure",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "3-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "On-load release gear/automatic release hooks",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "On-load release gear/automatic release hooks five",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "yearly overhaul and operational test incl. free-fall",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "5-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Test run of life- and rescue boat engines",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Lifeboats with self-contained air",
+            "description": "",
+            "regulation": "SOLAS III/20",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "5-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "6-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Lifeboats (except free-fall lifeboats)",
+            "description": "",
+            "regulation": "SOLAS III/20",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Perform hydrostatic testing of all self-contained",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "5-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Self-contained breathing",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "5-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "10-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "5-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "fire-fighting training course according to",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "STCW Code, para. A-VI/3).",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "10-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Fire-fighter's outfits",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Verify lockers providing storage for fire-fighting",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "grease build-up.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "The foam concentrates of any non-sealed portable",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Aerosol fire-extinguishing systems",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Rules I-0, Sect. 3, C.1.1.4.2",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "2-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "10-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Alternative gas fire-extinguishing systems",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Verify that all fixed fire-extinguishing system control panel indicators are",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Alternative gas fire-extinguishing systems",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Rules I-0, Sect. 3, C.1.1.4.2",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "2-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "2-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "5-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Rules I-0, Sect. 3, B.1.5.5.3",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "10-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "inspection and NDT (non-destructive testing)",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Rules I-0, Sect. 3, C.1.3.3.10.1",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "At least 10-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "CO2 fire-extinguishing systems",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Test all fuel shut-off controls connected to fire-protection systems for proper",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "CO2 fire-extinguishing systems",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Rules I-0, Sect. 3, C.1.1.4.2",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "For low-pressure systems only.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "2-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "2-yearly \u00b1 3 months",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "2.5-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "CO2 fire-extinguishing systems",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "2-yearly \u00b1 3 months",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "2.5-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "2-yearly \u00b1 3 months",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "2.5-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "2-yearly \u00b1 3 months",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "At least 5-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "2-yearly \u00b1 3 months",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "At least 5-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "2-yearly \u00b1 3 months",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "At least 5-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "exceeding 10 years. At the 10-year inspection, at least 10% of the total number",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Rules I-0, Sect. 3, B.1.5.5.3",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "10-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Rules I-0, Sect. 3, C.1.3.3.10.1",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "At least 10-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "CO2 fire-extinguishing systems",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Rules I-0, Sect. 3, B.1.5.5.4",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Deep fat cooking fire-extinguishing systems",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Rules I-0, Sect. 3, C.1.1.4.2",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "2-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Rules I-0, Sect. 3, C.1.1.4.2",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "2-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "2-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Rules I-0, Sect. 3, B.1.5.5.1/.5",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "5-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Subject all powder containment vessels to hydrostatic or non-destructive testing",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "10-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Foam fire-extinguishing systems",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Test all fuel shut-off controls connected to fire-protection systems for proper",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Rules I-0, Sect. 3, C.1.1.4.2",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "2-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "5-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Except for non-alcohol resistant foam, the",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Foam fire-extinguishing systems",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "mixing ratio tolerance is within +30 to -10% of the nominal mixing ratio defined by",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Verify proper operation of all water mist, water-spray and sprinkler systems using",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "within a one-year period.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Rules I-0, Sect. 3, C.1.1.4.2",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "2-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Flush all ro-ro deck deluge system piping with water, drain and purge with air.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "5-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Rules I-0, Sect. 3, B.1.5.5.1",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "5-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "all sections are tested within a five-year",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Water-spraying systems supplied from the",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Rules I-0, Sect. 3, B.1.5.5.3",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "10-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "SOLAS V/19-1",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "5-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "STCW Code/Sec. A-VIII/2.34.2",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "SOLAS II-1/5.5",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "5-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Verify that the low-location lighting systems are",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "5-yearly",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Low-location lighting",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "Shore-based maintenance provider.",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "information and on a non-binding basis only. In preparing this publication Germanischer Lloyd has used its best",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        },
+        {
+            "category": "ffa",
+            "item": "of liability regarding the up-to-date nature, accuracy, completeness or fitness for a specific purpose of the",
+            "description": "",
+            "regulation": "SOLAS II-2",
+            "due": "Monthly"
+        }
+    ]
+}
