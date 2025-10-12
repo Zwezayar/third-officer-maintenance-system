@@ -1,0 +1,2560 @@
+Fleet in Service, Technical Support (Section MCTDE665)
+
+Checklist for Maintenance of Safety Equipment
+
+Hamburg, January 2014
+
+0
+Rev. 01/2014
+
+Introduction
+This overview by Germanischer Lloyd provides requirements and recommendations for maintenance and
+inspection of safety equipment in a compact and practical tool for ship owners, operators and Surveyors. New
+maintenance requirements for such equipment are published irregularly and in various IMO documents and
+chapters which makes it cumbersome and time consuming to keep track of all changes. This list includes also
+requirements and recommendations by Germanischer Lloyd.
+Additional or more stringent requirements of manufacturers and the competent Administration are to be observed.
+
+Procedure
+Certain maintenance procedures and inspections may be performed by competent crew members, while others
+shall be performed by specially trained persons. Which parts of the inspections and maintenance shall be
+completed by competent crew members or specially trained persons is indicated in the list.
+
+Precautions
+As a general rule all inspections shall be carried out in accordance with the system manufacturer’s instructions and
+safety precautions. If equipment is undergoing maintenance or testing then suitable arrangements shall be made
+to ensure safety is not diminished through the provision of alternate equipment or other measures.
+
+Records
+Records of the inspections shall be carried on board of the ship, or may be computer-based. In cases where the
+inspections and maintenance are carried out by specially trained persons other than the ship's crew, inspection
+reports shall be provided upon the completion of the inspections. Some inspections required by SOLAS shall be
+entered in the log-book.
+
+Table of Contents
+1
+2
+3
+4
+5
+
+Life Saving Appliances
+Fire Protection and Fire Fighting Equipment
+Fixed Fire Fighting Systems
+Radio and Navigational Equipment
+Others
+
+2
+5
+9
+17
+18
+
+Contact
+If you have any questions about this list or if would like to have more details, please contact Germanischer Lloyd:
+maintenance-safeq@dnvgl.com
+
+Disclaimer
+The Use of this "Checklist for Maintenance of Safety Equipment" is subject to the terms and conditions stated on
+page 20.
+
+1
+
+1 Life Saving Appliances
+Equipment / Requirement
+
+Regulation
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+Remark
+
+Maintenance and inspection
+
+SOLAS II-1/3-9.3
+SOLAS III/20.4
+SOLAS III/20.7.2
+MSC.1/Circ.1331, Annex, para. 4
+
+All
+
+Monthly
+
+Crew
+
+In accordance with manufacturer’s
+instructions. Maintenance of wires acc. to
+SOLAS III/20.4.
+
+Examination
+
+SOLAS II-1/3-9.3
+MSC.1/Circ.1331, Annex, para. 5
+
+All
+
+Annually
+
+Crew + GL
+
+Examination and operational test with
+specified max. operational load
+
+SOLAS II-1/3-9.3
+MSC.1/Circ.1331, Annex, para. 5
+
+All
+
+5-yearly
+
+Crew + GL
+
+Examine cylinder gauges to confirm
+they are in the correct pressure range
+
+MSC.1/Circ.1432, para. 4.5
+
+All
+
+Weekly
+
+Crew
+
+Check according to maker's
+instructions
+
+MSC.1/Circ.1432, para. 7.8.3
+
+All
+
+Annually
+
+Crew
+
+Hydrostatic test and internal inspection
+of cylinders
+
+IACS Rec. No.88
+
+All
+
+As specified by the
+manufacturer
+
+SER or ALS
+
+SOLAS III/19.3.3.9
+
+All
+
+At each abandon
+ship drill
+
+Crew
+
+Maintenance
+
+SOLAS III/20.4
+MSC.1/Circ.1206/Rev.1
+
+All
+
+Weekly
+Monthly
+Annually
+
+SER (or Crew)
+
+Renewal
+
+SOLAS III/20.4
+
+All
+
+Latest after 5 years
+or earlier when
+necessary due to
+deterioration
+
+Maker or
+MTP or
+SPF or
+SP + GL
+
+Replacement of first-aid outfit and anti-seasickness medicine of lifeboat
+equipment
+
+LSA Code, para. 1.2.3
+
+All
+
+Maker’s expiry date
+
+Crew
+
+Replacement of food rations of lifeboat equipment
+
+LSA Code, para. 1.2.3
+
+All
+
+Maker’s expiry date
+
+Crew
+
+Means of Embarkation on and
+Disembarkation from ships
+(Gangways, accommodation ladders
+incl. winch and fittings as well as use
+for pilot transfer)
+
+Emergency escape breathing
+devices (EEBDs)
+
+Testing of emergency lighting
+Falls used in launching appliances
+
+2
+
+Suitable test weights are to be provided.
+
+Intervals specified in recognized international
+standards (e.g. ISO, EN) are to be observed.
+
+Inspections according to makers
+maintenance guidelines;
+Special concern to hidden areas and areas
+of end terminations;
+Ships crew only if properly trained and
+familiar with these works.
+
+Equipment / Requirement
+
+Regulation
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+Remark
+
+Maintenance of hydrostatic release units (non-disposable)
+
+SOLAS III/20.9.1
+
+All
+
+Annually
+
+SER
+
+Administration may extend this period to 17
+months.
+
+Immersion suits and anti-exposure
+Suits
+
+Inspection
+
+SOLAS III/20.7.2
+SOLAS III/36.1
+MSC/Circ.1047
+
+All
+
+Monthly
+
+Crew
+
+Air pressure test (seams and closures)
+
+MSC/Circ.1114
+
+All
+
+3-yearly
+
+SBM or Crew
+
+By crew provided suitable equipment is
+available on board.
+Tests more frequently for suits older than 10
+years.
+
+Maintenance of inflatable liferafts, lifejackets
+
+SOLAS III/20.8.1.1
+
+All
+
+Annually
+
+SER
+
+Administration may extend this period to 17
+months.
+Inflatable liferafts: Administration can
+accept specific liferafts for extended service
+intervals acc. to SOLAS III/20.8.3 and
+MSC.1/Circ.1328.
+
+Launching appliances
+
+Launching appliance annual thorough examination
+
+SOLAS III/20.11.1.2
+MSC.1/Circ.1206/Rev.1/Appendix
+of Annex 1, para. 2.8 and 2.9 as
+applicable
+
+All
+
+Annually
+
+Maker or
+MTP or
+SPF or
+SP + GL
+
+Dynamic test of the winch brake
+
+SOLAS III/20.11.1.3
+MSC.1/Circ.1206/Rev.1/Appendix
+of Annex 1, para. 3.1 and 3.3 as
+applicable
+
+On-load release gear/automatic release hooks
+thorough examination and operational test incl. freefall lifeboat release system
+
+SOLAS III/20.11.2..2 + 20.11.3.2
+MSC.1/Circ.1206/Rev.1/Appendix
+of Annex 1, para. 2.4 / 2.5 / 2.6
+and 2.7
+
+Dynamic test of the winch brake
+
+SOLAS III/20.11.1.3
+MSC.1/Circ.1206/Rev.1/Appendix
+of Annex 1, para. 3.2 and 3.3 as
+applicable
+
+On-load release gear/automatic release hooks five
+yearly overhaul and operational test incl. free-fall
+lifeboat release system.
+
+SOLAS III/20.11.2.3 + 20.11.3.3
+MSC.1/Circ.1206/Rev.1/Appendix
+of Annex 1, para. 4
+
+Applicable load: Weight of survival craft
+without persons on board.
+
+All
+
+3
+
+5-yearly
+
+Maker + GL or
+MTP + GL or
+SP + GL or
+SPF
+
+Applicable load: 1.1 x Weight of fully
+equipped survival craft with equivalent
+weight of max. permitted number of persons.
+To be performed in connection with the
+annually required thorough examination.
+
+Equipment / Requirement
+
+Regulation
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+Remark
+
+Examination of lifeboats
+
+MSC.1/Circ.1206/Rev.1
+
+All
+
+Yearly
+
+Crew + Maker
+
+Engine, propulsion, manoeuvring and power
+supply system.
+
+Moving from stowed position
+
+SOLAS III/20.6.3
+
+All
+
+Weekly
+
+Crew
+
+Turning out from stowed position
+
+SOLAS III/20.7.1
+
+All
+
+Monthly
+
+Crew
+
+Inspection of lifeboat equipment
+
+SOLAS III/20.7.2
+
+All
+
+Monthly
+
+Crew
+
+Test run of life- and rescue boat engines
+
+SOLAS III/20.6.2
+MSC.1/Circ.1206/Rev.1
+
+All
+
+Weekly
+
+Crew
+
+Lifeboats with self-contained air
+support system
+
+Examination
+
+MSC.1/Circ.1206/Rev.1
+
+Tanker (chem/gas)
+
+Yearly
+
+Crew + Maker
+
+Hydrostatic test of air cylinders
+
+IACS Rec. No.88
+
+Tanker (chem/gas)
+
+5-yearly
+
+SER or ALS
+
+Examination of lifeboats with sprinkler system
+
+MSC.1/Circ.1206/Rev.1
+
+Tanker (oil)
+
+Yearly
+
+Crew + Maker
+
+Battery replacement of lifebuoy lights
+
+LSA Code, para. 1.2.3
+
+All
+
+Maker’s expiry date
+
+Crew
+
+Annually, if not marked with expiration date.
+
+Service
+
+SOLAS III/20.8.1.1
+
+Passenger ships
+
+Annually
+
+SER
+
+Administration may extend this period to 17
+months.
+
+Test
+
+SOLAS III/20.8.2
+
+Passenger ships
+
+6-yearly
+
+SER
+
+Deployment on rotational basis at intervals to
+be agreed by Administration, however each
+system to be deployed at least once every
+six years.
+
+Testing of public address systems and general alarm systems
+
+SOLAS III/20.6.4
+MSC.1/Circ.1432, para. 4.4
+
+All
+
+Weekly
+
+Crew
+
+Replacement of rocket parachute flares and rockets line throwing appliances
+
+LSA Code, para. 1.2.3
+
+All
+
+Maker’s expiry date
+
+Crew
+
+Replacement of smoke signals
+
+LSA Code, para. 1.2.3
+
+All
+
+Maker’s expiry date
+
+Crew
+
+Visual inspection of survival craft, rescue boats and launching appliances
+
+SOLAS III/20.6.1
+
+All
+
+Weekly
+
+Crew
+
+Lifeboats (except free-fall lifeboats)
+
+Marine evacuation systems (MES)
+
+4
+
+Incl. external inspection of air cylinders.
+
+2 Fire Protection and Fire Fighting Equipment
+Equipment / Requirement
+
+Regulation
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+Remark
+
+Air recharging system
+for SCBAs
+
+BCH Code, para. 3.16.8
+IGC Code, para. 14.2.6
+
+Tanker (chem/gas)
+
+Monthly
+
+Crew
+
+By a responsible officer.
+
+Annually
+
+Maker
+
+Check breathing apparatus air recharging systems,
+if fitted, for air quality.
+
+MSC.1/Circ.1432, para. 7.8.1
+
+All
+
+Annually
+
+ALS or Crew
+
+Examine cylinder gauges to confirm they are in the
+correct pressure range
+
+MSC.1/Circ.1432, para. 4.5
+
+All
+
+Weekly
+
+Crew
+
+The breathing apparatus shall be inspected.
+
+BCH Code, para. 3.16.8
+IBC Code, para. 14.2.6
+IGC Code, para. 14.2.6
+
+Tanker (chem/gas)
+
+Monthly
+
+Crew
+
+Annually
+
+SER or Maker
+
+Check all breathing apparatus face masks and air
+demand valves are in serviceable condition.
+
+MSC.1/Circ.1432, para. 7.8.2
+
+All
+
+Annually
+
+Crew
+
+Perform hydrostatic testing of all self-contained
+breathing apparatus cylinders.
+
+MSC.1/Circ.1432, para. 9.4
+
+All
+
+5-yearly
+
+SER or ALS
+
+Verify all fire detection and fire alarm control panel
+indicators are functional by operating the
+lamp/indicator test switch.
+
+MSC.1/Circ.1432, para. 4.1
+
+All
+
+Weekly
+
+Crew
+
+Test a sample of detectors and manual call points
+so that all devices have been tested within five
+years.
+
+MSC.1/Circ.1432, para. 5.10
+
+All
+
+Monthly
+
+Crew
+
+Test all fire detection systems and fire detection
+systems used to automatically release fireextinguishing systems for proper operation, as
+appropriate.
+
+MSC.1/Circ.1432, para. 7.2.1
+
+All
+
+Annually
+
+Crew
+
+Visually inspect all accessible detectors for evidence
+of tampering obstruction, etc., so that all detectors
+are inspected within one year
+
+MSC.1/Circ.1432, para. 7.2.2
+
+Test emergency power supply switchover.
+
+MSC.1/Circ.1432, para. 7.2.3
+
+Test all fire dampers for local operation.
+
+MSC.1/Circ.1432, para. 6.3
+
+All
+
+Quarterly
+
+Crew
+
+Self-contained breathing
+apparatuses (SCBAs)
+
+The compressed air equipment shall be inspected.
+The equipment shall be inspected and tested.
+
+The equipment shall be inspected and tested.
+
+Fixed fire detection and
+alarm systems
+
+Fire dampers
+
+5
+
+By crew provided a suitable measurement
+device is available on board. The test device
+is to be agreed with the maker of the air
+recharging system.
+
+By a responsible officer.
+
+Aluminium and composite cylinders shall be
+tested to the satisfaction of the
+Administration.
+
+For very large systems the sample size shall
+be determined by the Administration.
+
+Equipment / Requirement
+
+Fire doors
+
+Portable fire
+extinguishers
+
+Wheeled (mobile) fire
+extinguishers
+
+Regulation
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+Test all fire dampers for remote operation.
+
+MSC.1/Circ.1432, para. 7.6
+
+All
+
+Annually
+
+Crew
+
+Verify that all fire door control panel indicators, if
+provided, are functional by operating the
+lamp/indicator switch.
+
+MSC.1/Circ.1432, para. 4.3
+
+All
+
+Weekly
+
+Crew
+
+Test all fire doors located in main vertical zone
+bulkheads for local operation.
+
+MSC.1/Circ.1432, para. 6.4
+
+Passenger ships
+
+Quarterly
+
+Crew
+
+Test all remotely controlled fire doors for proper
+release.
+
+MSC.1/Circ.1432, para. 7.7
+
+All
+
+Annually
+
+Crew
+
+Inspection in accordance with the manufacturer’s
+instruction and based on inspection guide in
+Res.A.951(23), table 9.1.3.
+
+Res.A.951 (23), para. 9.1
+
+All
+
+Annually
+
+Crew or SER
+
+At least one fire extinguisher of each type
+manufactured in the same year and kept on board a
+ship shall be test discharged as part of a fire drill.
+
+Res.A.951 (23), para. 9.1.1
+
+All
+
+5-yearly
+
+Crew
+
+All fire extinguishers together with propellant
+cartridges shall be hydraulically tested in
+accordance with the recognized standard or the
+manufacturer’s instruction.
+
+Res.A.951 (23), para. 9.1.2
+
+All
+
+10-yearly
+
+SER or ALS
+
+Verify that all are in place, properly arranged, and
+are in proper condition.
+
+MSC.1/Circ.1432, para. 5.9
+
+All
+
+Monthly
+
+Crew
+
+Inspection in accordance with the manufacturer's
+instructions.
+
+MSC.1/Circ.1432, para. 7.12.1
+
+All
+
+Annually
+
+Crew
+
+Wheeled (mobile) fire extinguishers shall be visually
+inspected to check that all accessible components
+are in proper condition.
+
+MSC.1/Circ.1432, para. 7.12.2
+
+The hydrostatic test date of each cylinder is to be
+checked.
+
+MSC.1/Circ.1432, para. 7.12.3
+
+Dry powder wheeled (mobile) fire extinguishers are
+to be inverted to ensure that the powder is agitated.
+
+MSC.1/Circ.1432, para. 7.12.4
+
+Visually examination of at least one wheeled
+(mobile) extinguisher of each type manufactured in
+the same year and kept on board.
+
+MSC.1/Circ.1432, para. 9.6
+
+All
+
+5-yearly
+
+Crew
+
+6
+
+Remark
+
+By, or under supervision of, a person with
+demonstrable competence (e.g. advanced
+fire-fighting training course according to
+STCW Code, para. A-VI/3).
+
+Equipment / Requirement
+
+Regulation
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+All fire extinguishers together with propellant
+cartridges shall be hydraulically tested in
+accordance with the recognized standard or the
+manufacturer’s instruction.
+
+MSC.1/Circ.1432, para. 10.5
+
+All
+
+10-yearly
+
+SER or ALS
+
+Fire-fighter's outfits
+
+Verify lockers providing storage for fire-fighting
+equipment contain their full inventory and equipment
+is in serviceable condition.
+
+MSC.1/Circ.1432, para. 5.5
+
+All
+
+Monthly
+
+Crew
+
+Fire mains, fire pumps,
+hydrants, hoses and
+nozzles
+
+Verify that all fire hydrants, hose and nozzles are in
+place, properly arranged, and are in serviceable
+condition.
+
+MSC.1/Circ.1432, para. 5.1.1
+
+All
+
+Monthly
+
+Crew
+
+Operate all fire pumps to confirm that they continue
+to supply adequate pressure.
+
+MSC.1/Circ.1432, para. 5.1.2
+
+Verify that emergency fire pump fuel supply is
+adequate and heating system in satisfactory
+condition, if applicable.
+
+MSC.1/Circ.1432, para. 5.1.3
+
+Verify that international shore connection(s) is/are in
+serviceable condition.
+
+MSC.1/Circ.1432, para. 6.1
+
+All
+
+Quarterly
+
+Crew
+
+Visually inspect all accessible components for
+proper condition.
+
+MSC.1/Circ.1432, para. 7.1.1
+
+All
+
+Annually
+
+Crew
+
+Flow test all fire pumps for proper pressure and
+capacity. Test emergency fire pump with isolation
+valves closed
+
+MSC.1/Circ.1432, para. 7.1.2
+
+Test all hydrant valves for proper operation.
+
+MSC.1/Circ.1432, para. 7.1.3
+
+Pressure test a sample of fire hoses at the
+maximum fire main pressure, so that all fire hoses
+are tested within five years.
+
+MSC.1/Circ.1432, para. 7.1.4
+
+Verify all fire pump relief valves, if provided, are
+properly set.
+
+MSC.1/Circ.1432, para. 7.1.5
+
+Examine all filters/strainers to verify they are free of
+debris and contamination.
+
+MSC.1/Circ.1432, para. 7.1.6
+
+Verify that the nozzle size/type is correct,
+maintained and working.
+
+MSC.1/Circ.1432, para. 7.1.7
+
+7
+
+Remark
+
+Equipment / Requirement
+
+Regulation
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+Galley exhaust ducts
+
+Verify galley exhaust ducts and filters are free of
+grease build-up.
+
+MSC.1/Circ.1432, para. 7.6.2
+
+All
+
+Annually
+
+Crew
+
+Portable foam
+applicator units
+
+Verify all portable foam applicators are in place,
+properly arranged, and are in proper condition.
+
+MSC.1/Circ.1432, para. 5.8
+
+All
+
+Monthly
+
+Crew
+
+Verify that all portable foam applicators are set to
+the correct proportioning ratio for the foam
+concentrate supplied and the equipment is in proper
+order.
+
+MSC.1/Circ.1432, para. 7.11.1
+
+Verify that all portable containers or portable tanks
+containing foam concentrate remain factory sealed,
+and the manufacturer's recommended service life
+interval has not been exceeded.
+
+MSC.1/Circ.1432, para. 7.11.2
+
+Portable containers or portable tanks containing
+foam concentrate, excluding protein based
+concentrates, less than 10 years old, that remain
+factory sealed can normally be accepted without the
+periodical foam control tests required in
+MSC.1/Circ.1312 being carried out.
+
+MSC.1/Circ.1432, para. 7.11.3
+
+Protein based foam concentrate portable containers
+and portable tanks shall be thoroughly checked and,
+if more than five years old, the foam concentrate
+shall be subjected to the periodical foam control
+tests required in MSC.1/Circ.1312, or renewed.
+
+MSC.1/Circ.1432, para. 7.11.4
+
+The foam concentrates of any non-sealed portable
+containers and portable tanks, and portable
+containers and portable tanks where production data
+is not documented, shall be subjected to the
+periodical foam control tests required in
+MSC.1/Circ.1312.
+
+MSC.1/Circ.1432, para. 7.11.5
+
+Test all ventilation controls interconnected with fireprotection systems for proper operation.
+
+MSC.1/Circ.1432, para. 7.6.3
+
+Ventilation systems
+
+Remark
+
+Foam control tests are to be conducted by
+an approved service supplier or an
+accredited laboratory.
+
+All
+
+8
+
+Annually
+
+Crew
+
+3 Fixed Fire Fighting Systems
+Aerosol fire-extinguishing systems
+
+Regulation
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+Verify that all electrical connections and/or manual operating stations are properly
+arranged, and are in proper condition.
+
+MSC.1/Circ.1432, para. 5.7
+
+All
+
+Monthly
+
+Crew
+
+Verify that the actuation system/control panel circuits are within manufacturer's
+specifications.
+
+Remark
+
+All
+
+Verify that condensed or dispersed aerosol generators have not exceeded their
+mandatory replacement date. Pneumatic or electric actuators shall be
+demonstrated working, as far as practicable.
+
+MSC.1/Circ.1432, para. 7.10
+
+All
+
+Annually
+
+Crew
+
+Maintenance by approved service supplier.
+
+Rules I-0, Sect. 3, C.1.1.4.2
+
+All
+
+2-yearly
+
+SER
+
+Condensed or dispersed aerosol generators are to be renewed in accordance
+with manufacturer's recommendations.
+
+MSC.1/Circ.1432, para. 10.4
+
+All
+
+10-yearly
+
+SER
+
+Alternative gas fire-extinguishing systems
+
+Regulation
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+Verify that all fixed fire-extinguishing system control panel indicators are
+functional by operating the lamp/indicator test switch.
+
+MSC.1/Circ.1432, para. 4.2.1
+
+All
+
+Weekly
+
+Crew
+
+Verify that all control/section valves are in the correct position.
+
+MSC.1/Circ.1432, para. 4.2.1
+
+Verify containers/cylinders fitted with pressure gauges are in the proper range
+and the installation free from leakage.
+
+MSC.1/Circ.1432, para. 5.2
+
+All
+
+Monthly
+
+Crew
+
+Visually inspect all accessible components for proper condition.
+
+MSC.1/Circ.1432, para. 7.3
+
+All
+
+Annually
+
+Crew
+
+(e.g. FM 200, NOVEC 1230 or Halon)
+
+Externally examine all high pressure cylinders for evidence of damage or
+corrosion.
+Check the hydrostatic test date of all storage containers.
+Functionally test all fixed system audible and visual alarms.
+Verify all control/section valves are in the correct position.
+Check the connections of all pilot release piping and tubing for tightness.
+Examine all flexible hoses in accordance with manufacturer's recommendations.
+
+9
+
+Remark
+
+Alternative gas fire-extinguishing systems
+
+Regulation
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+Remark
+
+Maintenance by approved service supplier.
+
+Rules I-0, Sect. 3, C.1.1.4.2
+
+All
+
+2-yearly
+
+SER
+
+All high pressure extinguishing agents cylinders and pilot cylinders shall be
+weighed or have their contents verified by other reliable means to confirm that the
+available charge in each is above 95 per cent of the nominal charge. Cylinders
+containing less than 95 per cent of the nominal charge shall be refilled.
+
+MSC.1/Circ.1432, para. 8.1.1
+
+All
+
+2-yearly
+
+Crew or SER
+
+Blow dry compressed air or nitrogen through the discharge piping or otherwise
+confirm the pipe work and nozzles are clear of any obstructions. This may require
+the removal of nozzles, if applicable.
+
+MSC.1/Circ.1432, para. 8.1.2
+
+Perform internal inspection of all control valves.
+
+MSC.1/Circ.1432, para. 9.1
+
+All
+
+5-yearly
+
+SER
+
+Perform a hydrostatic test and internal examination of 10 per cent of the system's
+extinguishing agent and pilot cylinders. If one or more cylinders fail, a total of 50
+per cent of the onboard cylinders shall be tested. If further cylinders fail, all
+cylinders shall be tested.
+
+MSC.1/Circ.1432, para. 10.1
+Rules I-0, Sect. 3, B.1.5.5.3
+
+All
+
+10-yearly
+
+SER + GL
+
+If permitted by the Administration, visual
+inspection and NDT (non-destructive testing)
+of halon cylinders may be performed in lieu
+of hydrostatic testing. GL HO is to be
+contacted prior to the NDT.
+
+Flexible hoses shall be replaced at the intervals recommended by the
+manufacturer and not exceeding every 10 years.
+
+MSC.1/Circ.1318, para. 6.1.2
+Rules I-0, Sect. 3, C.1.3.3.10.1
+
+All
+
+At least 10-yearly
+
+Crew or SER
+
+Hose Assemblies are to be delivered on
+board with a GL test certificate.
+
+CO2 fire-extinguishing systems
+
+Regulation
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+Remark
+
+General visual inspection of the overall system condition for obvious signs of
+damage.
+
+MSC.1/Circ.1318, para. 4.1
+
+All
+
+Monthly
+
+Crew
+
+Verify that all stop valves are in the closed position.
+
+MSC.1/Circ.1318, para. 4.1.1
+
+All
+
+Verify that all releasing controls are in the proper position and readily accessible
+for immediate use
+
+MSC.1/Circ.1318, para. 4.1.2
+
+All
+
+(e.g. FM 200, NOVEC 1230 or Halon)
+
+Test all fuel shut-off controls connected to fire-protection systems for proper
+operation.
+The boundaries of the protected space shall be visually inspected to confirm that
+no modifications have been made to the enclosure that have created uncloseable
+openings that would render the system ineffective.
+If cylinders are installed inside the protected space, verify the integrity of the
+double release lines inside the protected space, and check low pressure or circuit
+integrity monitors on release cabinet, as applicable.
+
+10
+
+CO2 fire-extinguishing systems
+
+Regulation
+
+Ship Type
+
+Verify that all discharge piping and pneumatic tubing is intact and has not been
+damaged.
+
+MSC.1/Circ.1318, para. 4.1.3
+
+All
+
+Verify that all high pressure cylinders are in place and properly secured.
+
+MSC.1/Circ.1318, para. 4.1.4
+
+All
+
+Verify that the alarm devices are in place and do not appear damaged.
+
+MSC.1/Circ.1318, para. 4.1.5
+
+All
+
+Verifiy that the pressure gauge is reading in the normal range.
+
+MSC.1/Circ.1318, para. 4.2.1
+
+All
+
+Verify that the liquid level indicator is reading within the proper level.
+
+MSC.1/Circ.1318, para. 4.2.2
+
+All
+
+Verify that the manually operated storage tank main service valve is secured in
+the open position.
+
+MSC.1/Circ.1318, para. 4.2.3
+
+All
+
+Verify that the vapour supply line valve is secured in the open position.
+
+MSC.1/Circ.1318, para. 4.2.4
+
+All
+
+The boundaries of the protected space shall be visually inspected to confirm that
+no modifications have been made to the enclosure that have created uncloseable
+openings that would render the system ineffective.
+
+MSC.1/Circ.1318, para. 5.1
+
+All
+
+All storage containers shall be visually inspected for any signs of damage, rust or
+loose mounting hardware. Cylinders that are leaking, corroded, dented or bulging
+shall be hydrostatically retested or replaced.
+
+MSC.1/Circ.1318, para. 5.2
+
+All
+
+System piping shall be visually inspected to check for damage, loose supports
+and corrosion. Nozzles shall be inspected to ensure they have not been
+obstructed by the storage of spare parts or a new installation of structure or
+machinery.
+
+MSC.1/Circ.1318, para. 5.3
+
+All
+
+The manifold shall be inspected to verify that all flexible discharge hoses and
+fittings are properly tightened.
+
+MSC.1/Circ.1318, para. 5.4
+
+All
+
+All entrance doors to the protected space shall close properly and shall have
+warning signs, which indicate that the space is protected by a fixed carbon
+dioxide system and that personnel shall evacuate immediately if the alarms
+sound. All remote releasing controls shall be checked for clear operating
+instructions and indication as to the space served.
+
+MSC.1/Circ.1318, para. 5.5
+
+All
+
+Maintenance by approved service supplier.
+
+Rules I-0, Sect. 3, C.1.1.4.2
+
+All high pressure cylinders and pilot cylinders shall be weighed or have their
+contents verified by other reliable means to confirm that the available charge in
+each is above 90% of the nominal charge. Cylinders containing less than 90% of
+the nominal charge shall be refilled. The liquid level of low pressure storage tanks
+shall be checked to verify that the required amount of carbon dioxide to protect
+the largest hazard is available.
+
+MSC.1/Circ.1318, para. 6.1.1
+
+11
+
+Interval
+
+By (see page 19)
+
+Remark
+
+For low-pressure systems only.
+
+Annually
+
+Crew
+
+All
+
+2-yearly
+
+SER
+
+Passenger ships
+
+2-yearly ± 3 months
+
+Crew or SER
+
+Cargo ships
+
+2.5-yearly
+
+Crew or SER
+
+CO2 fire-extinguishing systems
+
+Regulation
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+The hydrostatic test date of all storage containers shall be checked.
+
+MSC.1/Circ.1318, para. 6.1.2
+
+Passenger ships
+
+2-yearly ± 3 months
+
+Crew or SER
+
+Cargo ships
+
+2.5-yearly
+
+Crew or SER
+
+Passenger ships
+
+2-yearly ± 3 months
+
+Crew or SER
+
+Cargo ships
+
+2.5-yearly
+
+Crew or SER
+
+Passenger ships
+
+2-yearly ± 3 months
+
+SER
+
+Cargo ships
+
+At least 5-yearly
+
+Passenger ships
+
+2-yearly ± 3 months
+
+Cargo ships
+
+At least 5-yearly
+
+Passenger ships
+
+2-yearly ± 3 months
+
+Cargo ships
+
+At least 5-yearly
+
+The discharge piping and nozzles shall be tested to verify that they are not
+blocked. The test shall be performed by isolating the discharge piping from the
+system and flowing dry air or nitrogen from test cylinders or suitable means
+through the piping.
+
+MSC.1/Circ.1318, para. 6.1.3
+
+Where possible, all activating heads shall be removed from the cylinder valves
+and tested for correct functioning by applying full working pressure through the
+pilot lines.
+In cases where this is not possible, pilot lines shall be disconnected from the
+cylinder valves and blanked off or connected together and tested with full working
+pressure from the release station and checked for leakage.
+In both cases this shall be carried out from one or more release stations when
+installed.
+If manual pull cables operate the remote release controls, they shall be checked
+to verify the cables and corner pulleys are in good condition and freely move and
+do not require an excessive amount of travel to activate the system.
+
+MSC.1/Circ.1318, para. 6.2.1
+
+All cable components should be cleaned and adjusted as necessary, and the
+cable connectors shall be properly tightened. If the remote release controls are
+operated by pneumatic pressure, the tubing shall be checked for leakage, and the
+proper charge of the remote releasing station pilot gas cylinders shall be verified.
+All controls and warning devices shall function normally, and the time delay, if
+fitted shall prevent the discharge of gas for the required time period.
+
+MSC.1/Circ.1318, para. 6.2.2
+
+After completion of the work, the system shall be returned to service. All releasing
+controls shall be verified in the proper position and connected to the correct
+control valves. All pressure switch interlocks shall be reset and returned to
+service. All stop valves shall be in the closed position.
+
+MSC.1/Circ.1318, para. 6.2.3
+
+High pressure cylinders shall be subjected to periodical tests at intervals not
+exceeding 10 years. At the 10-year inspection, at least 10% of the total number
+provided shall be subjected to an internal inspection and hydrostatic test. If one or
+more cylinders fail, a total of 50% of the onboard cylinders shall be tested. If
+further cylinders fail, all cylinders shall be tested.
+
+MSC.1/Circ.1318, para. 6.1.2
+Rules I-0, Sect. 3, B.1.5.5.3
+
+All
+
+10-yearly
+
+SER + GL
+
+Flexible hoses shall be replaced at the intervals recommended by the
+manufacturer and not exceeding every 10 years.
+
+MSC.1/Circ.1318, para. 6.1.2
+Rules I-0, Sect. 3, C.1.3.3.10.1
+
+All
+
+At least 10-yearly
+
+SER or Crew
+
+12
+
+Remark
+
+On the occasion of each intermediate,
+periodical and Class Renewal Survey.
+
+On the occasion of each intermediate,
+periodical and Class Renewal Survey.
+
+SER
+
+SER
+
+Hose Assemblies are to be delivered on
+board with a GL test certificate.
+
+CO2 fire-extinguishing systems
+
+Regulation
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+Low pressure CO2 bulk storage containers are subject to internal survey if the
+content has been released and the container is more than 5 years old but not
+more frequently than once within five years.
+
+Rules I-0, Sect. 3, B.1.5.5.4
+
+All
+
+If the content has
+been released.
+
+SER + GL
+
+Deep fat cooking fire-extinguishing systems
+
+Regulation
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+Check in accordance with the manufacturer's instructions.
+
+MSC.1/Circ.1432, para. 7.13
+
+All
+
+Annually
+
+Crew
+
+Maintenance by approved service supplier.
+
+Rules I-0, Sect. 3, C.1.1.4.2
+
+All
+
+2-yearly
+
+SER
+
+Dry chemical powder systems
+
+Regulation
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+Verify that all control and section valves are in the proper open or closed position,
+and all pressure gauges are in the proper range.
+
+MSC.1/Circ.1432, para. 5.6
+
+All
+
+Monthly
+
+Crew
+
+Visually inspect all accessible components for proper condition.
+
+MSC.1/Circ.1432, para. 7.9.1
+
+All
+
+Annually
+
+Crew
+
+Verify that the pressure regulators are in proper order and within calibration.
+
+MSC.1/Circ.1432, para. 7.9.2
+
+Agitate the dry chemical powder charge with nitrogen in accordance with system
+manufacturer's instructions.
+
+MSC.1/Circ.1432, para. 7.9.3
+
+Maintenance by approved service supplier.
+
+Rules I-0, Sect. 3, C.1.1.4.2
+
+All
+
+2-yearly
+
+SER
+
+Blow dry nitrogen through the discharge piping to confirm that the pipe work and
+nozzles are clear of any obstructions.
+
+MSC.1/Circ.1432, para. 8.2.1
+
+All
+
+2-yearly
+
+SER
+
+Operationally test local and remote controls and section valves.
+
+MSC.1/Circ.1432, para. 8.2.2
+
+Verify the contents of propellant gas cylinders (including remote operating
+stations).
+
+MSC.1/Circ.1432, para. 8.2.3
+
+Test a sample of dry chemical powder for moisture content.
+
+MSC.1/Circ.1432, para. 8.2.4
+
+Subject the powder containment vessel, safety valve and discharge hoses to a full
+working pressure test.
+
+MSC.1/Circ.1432, para. 8.2.5
+
+Perform hydrostatic test and internal inspection of powder containment vessels.
+
+Rules I-0, Sect. 3, B.1.5.5.1/.5
+
+All
+
+5-yearly
+
+(Crew or SER) + GL
+
+Remark
+
+Remark
+
+Remark
+
+Due to the powder's affinity for moisture, any
+nitrogen gas introduced for agitation must be
+moisture free.
+
+13
+
+Hydrostatic test may be dispensed with,
+provided that their internal inspection does
+not reveal any deficiencies.
+
+Dry chemical powder systems
+
+Regulation
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+Remark
+
+Subject all powder containment vessels to hydrostatic or non-destructive testing
+(NDT) carried out by an accredited service agent.
+
+MSC.1/Circ.1432, para. 10.3
+
+All
+
+10-yearly
+
+SER + GL
+
+In case of NDT contact GL HO prior to the
+testing.
+
+Foam fire-extinguishing systems
+
+Regulation
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+Remark
+
+Verify that all control and section valves are in the proper open or closed position,
+and all pressure gauges are in the proper range.
+
+MSC.1/Circ.1432, para. 5.3
+
+All
+
+Monthly
+
+Crew
+
+Verify that the proper quantity of foam concentrate is provided in the foam system
+storage tank.
+
+MSC.1/Circ.1432, para. 6.2
+
+All
+
+Quarterly
+
+Crew
+
+Visually inspect all accessible components for proper condition.
+
+MSC.1/Circ.1432, para. 7.4.1
+
+All
+
+Annually
+
+Crew
+
+Functionally test all fixed system audible alarms.
+
+MSC.1/Circ.1432, para. 7.4.2
+
+Flow test all water supply and foam pumps for proper pressure and capacity, and
+confirm flow at the required pressure in each section (Ensure all piping is
+thoroughly flushed with fresh water after service.).
+
+MSC.1/Circ.1432, para. 7.4.3
+
+Test all system cross connections to other sources of water supply for proper
+operation.
+
+MSC.1/Circ.1432, para. 7.4.4
+
+Verify all pump relief valves, if provided, are properly set.
+
+MSC.1/Circ.1432, para. 7.4.5
+
+Examine all filters/strainers to verify they are free of debris and contamination.
+
+MSC.1/Circ.1432, para. 7.4.6
+
+Verify that all control/section valves are in the correct position
+
+MSC.1/Circ.1432, para. 7.4.7
+
+Blow dry compressed air or nitrogen through the discharge piping or otherwise
+confirm the pipework and nozzles of high expansion foam systems are clear of
+any obstructions, debris and contamination.
+
+MSC.1/Circ.1432, para. 7.4.8
+
+Take samples from all foam concentrates carried on board and subject them to
+the periodical control tests in MSC.1/Circ.1312, for low expansion foam, or
+MSC/Circ.670 for high expansion foam.
+
+MSC.1/Circ.1432, para. 7.4.8
+
+SER or ALS
+
+Test all fuel shut-off controls connected to fire-protection systems for proper
+operation.
+
+MSC.1/Circ.1432, para. 7.4.8
+
+Crew
+
+Maintenance by approved service supplier.
+
+Rules I-0, Sect. 3, C.1.1.4.2
+
+All
+
+2-yearly
+
+SER
+
+Perform internal inspection of all control valves.
+
+MSC.1/Circ.1432, para. 9.2.1
+
+All
+
+5-yearly
+
+SER
+
+This may require the removal of nozzles, if
+applicable.
+
+14
+
+Except for non-alcohol resistant foam, the
+first test need not be conducted until 3 years
+after being supplied to the ship.
+
+Foam fire-extinguishing systems
+
+Regulation
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+Remark
+
+Flush all high expansion foam system piping with fresh water, drain and purge
+with air.
+
+MSC.1/Circ.1432, para. 9.2.2
+
+Check all nozzles to prove they are clear of debris.
+
+MSC.1/Circ.1432, para. 9.2.3
+
+Test all foam proportioners or other foam mixing devices to confirm that the
+mixing ratio tolerance is within +30 to -10% of the nominal mixing ratio defined by
+the system approval.
+
+MSC.1/Circ.1432, para. 9.2.4
+
+Water mist, water spray and sprinkler systems
+
+Regulation
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+Remark
+
+Verify that all control panel indicators and alarms are functional.
+
+MSC.1/Circ.1432, para. 4.7.1
+
+All
+
+Weekly
+
+Crew
+
+Visually inspect pump unit and its fittings.
+
+MSC.1/Circ.1432, para. 4.7.2
+
+Check the pump unit valve positions, if valves are not locked, as applicable.
+
+MSC.1/Circ.1432, para. 4.7.3
+
+Verify all control, pump unit and section valves are in the proper open or closed
+position.
+
+MSC.1/Circ.1432, para. 5.4.1
+
+All
+
+Monthly
+
+Crew
+
+Verify sprinkler pressure tanks or other means have correct levels of water.
+
+MSC.1/Circ.1432, para. 5.4.2
+
+Test automatic starting arrangements on all system pumps so designed.
+
+MSC.1/Circ.1432, para. 5.4.3
+
+Verify that all standby pressure and air/gas pressure gauges are within the proper
+pressure ranges.
+
+MSC.1/Circ.1432, para. 5.4.3
+
+Test a selected sample of system section valves for flow and proper initiation of
+alarms.
+
+MSC.1/Circ.1432, para. 5.4.4
+
+Verify proper operation of all water mist, water-spray and sprinkler systems using
+the test valves for each section.
+
+MSC.1/Circ.1432, para. 7.5.1
+
+Visually inspect all accessible components for proper condition.
+
+MSC.1/Circ.1432, para. 7.5.2
+
+Externally examine all high pressure cylinders for evidence of damage or
+corrosion.
+
+MSC.1/Circ.1432, para. 7.5.3
+
+Check the hydrostatic test date of all high pressure cylinders.
+
+MSC.1/Circ.1432, para. 7.5.4
+
+Functionally test all fixed system audible and visual alarms.
+
+MSC.1/Circ.1432, para. 7.5.5
+
+Flow test all pumps for proper pressure and capacity.
+
+MSC.1/Circ.1432, para. 7.5.6
+
+The valves selected for testing shall be
+chosen to ensure that all valves are tested
+within a one-year period.
+All
+
+15
+
+Annually
+
+Crew
+
+Water mist, water spray and sprinkler systems
+
+Regulation
+
+Test all antifreeze systems for adequate freeze protection.
+
+MSC.1/Circ.1432, para. 7.5.7
+
+Test all system cross connections to other sources of water supply for proper
+operation.
+
+MSC.1/Circ.1432, para. 7.5.8
+
+Verify all pump relief valves, if provided, are properly set.
+
+MSC.1/Circ.1432, para. 7.5.9
+
+Examine all filters/strainers to verify they are free of debris and contamination.
+
+MSC.1/Circ.1432, para. 7.5.10
+
+Verify that all control/section valves are in the correct position.
+
+MSC.1/Circ.1432, para. 7.5.11
+
+Blow dry compressed air or nitrogen through the discharge piping of dry pipe
+systems, or otherwise confirm the pipework and nozzles are clear of any
+obstructions.
+
+MSC.1/Circ.1432, para. 7.5.12
+
+Test emergency power supply switchover, where applicable.
+
+MSC.1/Circ.1432, para. 7.5.13
+
+Visually inspect all sprinklers focusing in areas where sprinklers are subject to
+aggressive atmosphere (like saunas, spas, kitchen areas) and subject to physical
+damage (like luggage handling areas, gyms, play rooms, etc.) so that all
+sprinklers are inspected within one year.
+
+MSC.1/Circ.1432, para. 7.5.14
+
+Check for any changes that may affect the system such as obstructions by
+ventilation ducts, pipes, etc.
+
+MSC.1/Circ.1432, para. 7.5.15
+
+Test a minimum of one section in each open head water mist system by flowing
+water through the nozzles.
+
+MSC.1/Circ.1432, para. 7.5.16
+
+Test a minimum of two automatic sprinklers or automatic water mist nozzles for
+proper operation.
+
+MSC.1/Circ.1432, para. 7.5.17
+
+Maintenance by approved service supplier.
+
+Rules I-0, Sect. 3, C.1.1.4.2
+
+All
+
+2-yearly
+
+SER
+
+Flush all ro-ro deck deluge system piping with water, drain and purge with air.
+
+MSC.1/Circ.1432, para. 9.3.1
+
+All
+
+5-yearly
+
+SER
+
+Perform internal inspection of all control/section valves.
+
+MSC.1/Circ.1432, para. 9.3.2
+
+Check condition of any batteries, or renew in accordance with manufacturer's
+recommendations.
+
+MSC.1/Circ.1432, para. 9.3.3
+
+Perform internal examination water pressure cylinders.
+
+Rules I-0, Sect. 3, B.1.5.5.1
+
+All
+
+5-yearly
+
+(Crew or SER) + GL
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+Remark
+
+This may require the removal of nozzles, if
+applicable.
+
+The sections tested shall be chosen so that
+all sections are tested within a five-year
+period.
+
+16
+
+Water-spraying systems supplied from the
+fire main and consisting solely of an isolating
+valve and open nozzles are exempted from
+this requirement (e.g. for paint store).
+
+Water mist, water spray and sprinkler systems
+
+Regulation
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+Perform hydrostatic test and internal examination for gas and water pressure
+cylinders.
+
+MSC.1/Circ.1432, para. 10.2
+Rules I-0, Sect. 3, B.1.5.5.3
+
+All
+
+10-yearly
+
+SER + GL
+
+Remark
+
+4 Radio and Navigational Equipment
+Equipment / Requirement
+
+Regulation
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+Remark
+
+Testing of the automatic identification system (AIS)
+
+SOLAS V/18.9
+
+All
+
+Annually
+
+SER
+
+Test report shall be retained on board the
+ship.
+
+Long range identification and tracking system (LRIT)
+
+SOLAS V/19-1
+SOLAS V/16
+MSC.1/Circ.1307
+
+All
+
+Annually
+
+ASP
+
+Conformance Test Report shall be retained
+on board the ship.
+
+Checking of radio battery
+
+SOLAS IV/13.6.2
+
+All
+
+Annually
+
+SER
+
+Testing according to MSC.1/Circ.1040/Rev.1.
+
+SOLAS IV/15.9.1
+
+All
+
+Annually
+
+SER
+
+Testing according to MSC/Circ.1039.
+
+SOLAS IV/15.9.2
+
+All
+
+5-yearly
+
+SER
+
+Determination of Magnetic Compass Error
+
+STCW Code/Sec. A-VIII/2.34.2
+
+All
+
+Once a watch
+
+Crew
+
+Adjustment incl. Curve of Residual Deviation
+
+Flag State requirements
+
+All
+
+Individual Flag State
+requirements
+
+Individual Flag State
+requirements
+
+Testing
+
+SOLAS V/26.1
+
+All
+
+12 hours before
+departure
+
+Crew
+
+Emergency steering drill
+
+SOLAS V/26.4
+
+All
+
+Quarterly
+
+Crew
+
+SOLAS V/18.8
+
+All
+
+Annually
+
+SER
+
+Satellite EPIRBs
+
+Standard magnetic compass
+
+Steering gear
+
+Voyage data recorder (VDR)
+
+17
+
+Certificate of Compliance shall be issued.
+
+Table or Curve of residual Deviation to be
+available at all times and compass deviation
+book to be properly maintained will be
+checked annually during safety equipment
+surveys.
+Res.A.1053(27), item (EA) 1.2.1.27
+
+Certificate of Compliance and maintenance
+report shall be retained on board the ship.
+
+5 Others
+Equipment / Requirement
+
+Regulation
+
+Ship Type
+
+Interval
+
+By (see page 19)
+
+Remark
+
+Lightweight survey
+
+SOLAS II-1/5.5
+IS Code VIII/8.1.5
+
+Passenger ships
+
+5-yearly
+
+SER or
+Crew + GL
+
+Provided crew is properly trained.
+
+Verify that the low-location lighting systems are
+functional by switching off normal lighting in selected
+locations.
+
+MSC.1/Circ.1432, para. 4.6
+
+Passenger ships
+
+Weekly
+
+Crew
+
+Test the luminance in accordance with the procedures
+in resolution A.752(18).
+
+MSC.1/Circ.1432, para. 9.5
+Res.A.752(18)
+
+Passenger ships
+
+5-yearly
+
+SER
+
+Replacement of oxygen.
+
+National pharmaceutical
+regulations, if applicable
+
+All
+
+According to
+national
+pharmaceutical
+regulations
+
+Maker
+
+Low-location lighting
+systems
+
+Medical oxygen
+
+GL Recommendation
+Hydrostatic test and internal inspection of cylinders.
+
+Maker’s expiry date
+
+Flag State, if applicable
+
+All
+
+GL Recommendation
+
+According to Flag
+State requirements
+According to
+maker’s instructions
+and/or international
+standards (e.g. ISO,
+EN)
+
+18
+
+SER or ALS
+
+Scope of inspection specified by the Flag
+State and/or recognized international
+standards (e.g. ISO, EN) are to be observed.
+
+Code Letters
+Column “By”
+ALS
+
+Accredited laboratory/service company.
+
+ASP
+
+Recognized or approved application service provider according to resolution MSC.263(84).
+
+Crew
+
+Crew members.
+
+GL
+
+In presence of Germanischer Lloyd Surveyor.
+
+Maker
+
+Manufacturer or Service Company approved by the manufacturer.
+
+MTP
+
+Manufacturer Trained Personnel: appropriately trained and certified by the manufacturer for thorough
+examinations and overhaulings of exactly the same launching appliances and release gears.
+
+SBM
+
+Shore-based maintenance provider.
+
+SER
+
+Service supplier approved by GL.
+
+SP
+
+Service Personnel Competent person who has training from at least 3 Launching Appliances
+Manufacturers or at least one (1) Maker Approval Certificate per Service Technician included confirmed
+min. 100 Services on this kind (for the same design type) of Launching Appliance and Winches. SP has
+the necessary tools and spare parts together with the manufacturer’s maintenance instruction(s). The
+competent person is not necessarily a member of a shore based service company and may be Owner’s
+Representative (Superintendent, DPA or similar). If SP attends Launching Appliances for which he holds
+valid Maker’s Certificate, he has to be considered as MTP. GL Surveyor evaluates the technical
+knowledge/skill of SP and if necessary stops any further progress in the maintenance for Launching
+Appliances. In no case the attending surveyor takes liability for maintenance works conducted by SP.
+
+SPF
+
+Service Personnel authorized directly from the Flag State Administration of the respective vessel.
+
+19
+
+Disclaimer
+1. The information contained in this publication is provided free of charge by Germanischer Lloyd for general
+information and on a non-binding basis only. In preparing this publication Germanischer Lloyd has used its best
+efforts, based on the available information. Germanischer Lloyd however does not warrant and/or assume any kind
+of liability regarding the up-to-date nature, accuracy, completeness or fitness for a specific purpose of the
+information contained herein. The information contained in this publication shall not replace the individual check
+and verification by the Client. Germanischer Lloyd is not responsible for any action taken in reliance on the
+information contained herein.
+2. a. The liability of Germanischer Lloyd is limited to damages.
+b. Claims for damages shall be time barred one year after the beginning of the statutory limitation period, in so far
+as such defective performances shall not have been wrongfully concealed by Germanischer Lloyd or caused by
+the wilful misconduct of Germanischer Lloyd.
+c. Furthermore, except in case of breach by Germanischer Lloyd of a material contractual obligation, liability of
+Germanischer Lloyd for a slightly negligent performance of its obligations towards the Client shall be limited to the
+typical contractual foreseeable damage. This limitation of liability shall also apply to claims for damages by the
+Client based on the tort of slight negligence. In the event of a slightly negligent breach by Germanischer Lloyd of
+one of its material contractual obligations, the liability of Germanischer Lloyd shall be limited to typical contractual
+foreseeable damage.
+d. In the event of wilful misconduct or gross negligence on the part of Germanischer Lloyd, the liability of
+Germanischer Lloyd shall be determined as provided for by law. This shall also apply to any case where
+Germanischer Lloyd is strictly liable by law.
+e. Personal liability of the organs of Germanischer Lloyd or persons to whom Germanischer Lloyd resorts to
+perform its obligations is excluded except in case of their wilful misconduct or gross negligence.
+f. To the exception of tortious claims and product liability claims, all claims for damages irrespective of the legal
+basis on which they arise outside those for defective performances or defects shall be time barred one year after a
+breach of duty of Germanischer Lloyd, in so far as there was no willful misconduct or fraudulent intent on the part
+Germanischer Lloyd.
+g. The provisions of clause 2. above regarding limitation of liability and time bar shall not apply to claims for death,
+personal injury, damage to health or infringement of liberty.
+3. The results may be freely redistributed in their entirety, or in part if it includes an attribution containing the title,
+"Checklist for Maintenance of Safety Equipment ", the version number or version date or printing date, and the
+webpage name. No part of it may be sold for profit or incorporated in a commercial document without the prior
+written approval of Germanischer Lloyd.
+4. Germanischer Lloyd reserves the right to change and amend the content of this publication as well as this
+Disclaimer at any time. In this respect, please take notice of the respective applicable version.
+5. Usage of this information is governed by German law. The exclusive place of jurisdiction for any legal action
+against Germanischer Lloyd is Hamburg, provided that the user is a merchant in the legal sense.
+6. This disclaimer is to be regarded as part of the publication. If sections or individual terms of this statement are
+not legal or correct, the content or validity of the other parts remain uninfluenced by this fact.
+
+20
+
+

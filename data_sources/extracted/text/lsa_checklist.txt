@@ -1,0 +1,796 @@
+LIFE-SAVING APPLIANCES
+POCKET CHECKLIST
+Reducing the risk of Port State Control detentions
+
+In conjunction with:
+
+Introduction
+During the period 2005–2007, approximately 2,500 crew and
+passengers were reported killed or missing from lost ships.
+Additionally, there are increasing numbers of accidents and
+fatalities during routine lifeboat and inspection drills. It is
+therefore essential that ship personnel are appropriately
+trained in how to inspect, maintain and operate equipment
+and that the equipment is ready for use at all times.
+Being prepared can mean the difference between lives lost or
+lives saved.
+In conjunction with an industry partner, the UK P&I Club, we
+have analysed data relating to life-saving appliances, including
+deficiencies found by Port State Control officers. The result is
+this re-usable checklist, which highlights the most common
+deficiencies and lists them in convenient sections.
+As a minimum, the items on the chart on page 4 should
+be included as part of your final checks prior to voyage
+and port entry. It is strongly advised that all items in this
+aide memoire are checked on an ongoing basis to
+supplement your own operational and maintenance
+procedures and your flag State’s requirements.
+This is the third in a series of pocket checklists to help you
+comply with international convention requirements. For
+information about our other checklists please visit www.lr.org.
+
+Lloyd’s Register, its affiliates and subsidiaries and their respective officers, employees
+or agents are, individually and collectively, referred to in this clause as the ‘Lloyd's
+Register Group’. The Lloyd's Register Group assumes no responsibility and shall not
+be liable to any person for any loss, damage or expense caused by reliance on the
+information or advice in this document or howsoever provided, unless that person
+has signed a contract with the relevant Lloyd's Register Group entity for the provision
+of this information or advice and in that case any responsibility or liability is
+exclusively on the terms and conditions set out in that contract.
+
+Marine Life-Saving Appliances
+© Lloyd’s Register / UK P&I CLUB, 2008
+
+Page 2
+
+Are you prepared for a Port State
+Control Inspection?
+PSC officers always commence their inspection in the Master’s
+office. It is essential that certification is up-to-date and valid.
+All other necessary documents, records and manuals should,
+where required, be approved and on board.
+If equipment is broken or missing, or the ship has suffered
+damage enroute, the Master must notify the port authorities
+prior to port entry. If the port authorities are informed of the
+problem and of any permanent or temporary remedies agreed
+with the flag State, the vessel should not be detained.
+However, if notice is not given before entry, the Port State has
+clear grounds for inspection, possibly leading to a detention.
+If your ship is detained, or appears to be in the process
+of being detained, you should contact the nearest Lloyd’s
+Register Group office immediately for assistance.
+The major PSC organisations publish their criteria for targeting a
+ship on their web sites. Ship owners and operators should use
+these criteria to calculate the target rating of their ships.
+Paris MOU - www.parismou.org
+Tokyo MOU - www.tokyo-mou.org
+USCG - http://homeport.uscg.mil/mycg/portal/ep/home.do
+Other MOUs include Abuja, Black Sea, Caribbean, Indian
+Ocean, Mediterranean, Riyadh and Vina del Mar.
+A ship operator may disagree with the findings of the PSC
+Authority and the majority of the regional PSC organisations
+have guidelines on how to appeal against a detention. These
+can also be found on the above web sites.
+IMO Procedures for Port State Control, Appendix 1 also
+provides guidelines on detentions [ISBN: 92-801-5099-5].
+
+Marine Life-Saving Appliances
+© Lloyd’s Register / UK P&I CLUB, 2008
+
+Page 3
+
+Life-Saving Appliance deficiencies
+
+The following are the most common Life-Saving
+appliance deficiencies (by number) found by Port State
+Control officers on ships classed by Lloyd's Register
+between 2005–2007
+
+38
+
+49
+
+34
+
+29
+309
+
+52
+
+52
+63
+76
+
+94
+
+105
+
+0610 lifeboats [309]
+0630 launching arrangements for survival craft [105]
+0650 lifebuoys [94]
+0611 lifeboat inventory [76]
+0620 inflatable liferafts [63]
+0660 lifejackets [52]
+0692 operational readiness maintenance and inspections [52]
+0695 on board training and instructions [49]
+0680 embarkation arrangements survival craft [38]
+0615 rescue boats [34]
+0628 stowage of liferafts [29]
+
+Marine Life-Saving Appliances
+© Lloyd’s Register / UK P&I CLUB, 2008
+
+Page 4
+
+1. Certificates
+
+The following certificates must be carried on board.
+1. ■
+
+Cargo Ship Safety Equipment or Passenger Ship
+Safety
+– including the Record of Safety Equipment (Form E
+or Form P)
+
+2. ■
+
+Cargo Ship Safety Radio
+– including the Record of Equipment (Form R)
+
+3. ■
+
+Lifeboat
+– certificate of approval and for self-contained air
+support system, fire protection and on-load release
+gear, if provided
+
+4. ■
+
+Rescue boats (together with release
+arrangements)
+– certificate of approval
+
+5. ■
+
+Liferaft
+– certificate of approval
+– hydrostatic release unit other than disposable
+
+6. ■
+
+Launching Appliances
+– certificate of approval for davits including liferaft
+davits if fitted
+
+7. ■
+
+Air supply bottles hydrostatic test, if fitted
+
+8. ■
+
+Search and Rescue Transponder (SART)
+
+9. ■
+
+Emergency Position Indicating Radio Beacon
+(EPIRB)
+
+Marine Life-Saving Appliances
+© Lloyd’s Register / UK P&I CLUB, 2008
+
+Page 5
+
+2. Documents and records
+
+The following documents and records must be carried on
+board and be current, original and approved, where required.
+1. ■
+
+Instructions for on-board maintenance or a
+ship-board planned maintenance programme
+
+2. ■
+
+SOLAS training manuals and on-board training
+aids
+
+3. ■
+
+Muster list and emergency instructions
+
+4. ■
+
+Radio station licence
+
+5. ■
+
+Records of inspection, maintenance, testing and
+drills
+
+6. ■
+
+Records of crew familiarisation with fire and
+abandon ship drills
+
+Inspection and testing
+7. ■
+
+Inspection and testing of life-saving and
+launching appliances
+– includes on-load release gear, where fitted
+
+8. ■
+
+Communications equipment
+
+9. ■
+
+Lifeboat / rescue boat engine
+– weekly test conducted and recorded
+
+10. ■
+
+Emergency lighting
+
+11. ■
+
+Weekly and on-load engine tests conducted and
+recorded
+
+12. ■
+
+EPIRB shore-based maintenance
+
+13. ■
+
+Liferaft servicing at an approved service station
+
+Marine Life-Saving Appliances
+© Lloyd’s Register / UK P&I CLUB, 2008
+
+Page 6
+
+2.
+
+Documents and records, continued
+
+14. ■
+
+Servicing of fire-extinguishers in lifeboats
+
+15. ■
+
+Hydrostatic test of air supply bottles, where
+fitted
+
+Correctly mounted
+Hydrostatic Release
+Unit (HRU) on an
+inflatable liferaft
+
+Incorrectly mounted HRU on
+an inflatable liferaft. The
+painter should be attached to
+the HRU
+
+Note:
+Photograph records, with dates, provide good evidence of drills being
+regularly held.
+
+Marine Life-Saving Appliances
+© Lloyd’s Register / UK P&I CLUB, 2008
+
+Page 7
+
+3. Launching and stowage
+arrangements for lifeboats
+At all times, all equipment should be ready for operation, well
+maintained and inspected regularly.
+1. ■
+
+Davits and falls
+– all moving parts well greased and free
+– no corrosion, knife edges, cracks or holes
+– correctly marked
+– winches and brakes in good order and maintained
+– cut-out switches properly maintained
+– fall wires to be maintained as per SOLAS
+– securing devices and terminations properly
+maintained
+– tricing pendant and man ropes correctly
+maintained and rigged (as applicable)
+
+2. ■
+
+Bowsing tackles (if applicable) properly attached
+and ready for use
+
+3. ■
+
+Embarkation arrangements
+– Adequate lighting, emergency lighting, signs, etc.
+– Embarkation ladder and securing arrangements in
+good condition and of adequate length
+– Applicable launching instructions displayed
+
+Notes:
+1. It is recommended that the decks at the embarkation areas have a
+non-skid coating.
+2. Launching arrangements are to be checked annually by the
+manufacturer or person certified by the manufacturer.
+
+Marine Life-Saving Appliances
+© Lloyd’s Register / UK P&I CLUB, 2008
+
+Page 8
+
+4. Lifeboats all types
+
+At all times, all equipment should be ready for operation, well
+maintained and inspected regularly.
+Structure
+1. ■
+
+Hull in good condition
+– No deterioration in way of bearing surfaces
+– No cracks in hull and buoyancy tanks or corners of
+thwarts and, if required, all cracks repaired by
+approved means
+– Bilge keels not corroded and effectively attached
+– Grab lines effectively attached
+
+2. ■
+
+Connections to boat / rafts in good condition
+– Hanging hooks not corroded
+– Keel plate connections and pins in good condition
+
+Engine
+3. ■
+
+Starts readily
+
+4. ■
+
+Battery charger(s) connected and maintained
+
+5. ■
+
+Batteries tested to ensure charged, alternative
+starting arrangement present (hand crank)
+
+6. ■
+
+Exhaust protected (insulated)
+
+7. ■
+
+Sufficient fuel and no leaks of fuel or luboil
+
+General
+8. ■
+
+Rudder and stock in good working order
+
+9. ■
+
+Hook release mechanism well maintained
+
+10. ■
+
+Brake release arrangement functions correctly
+
+Marine Life-Saving Appliances
+© Lloyd’s Register / UK P&I CLUB, 2008
+
+Page 9
+
+4.
+
+Lifeboats all types, continued
+
+11. ■
+
+Bilge pump in good condition
+– evidence of suction
+
+12. ■
+
+Plugs operable and free but permanently
+attached
+
+13. ■
+
+Lifeboat painter in good condition and correctly
+rigged
+
+14. ■
+
+All markings clear and visible, including seat
+markings
+– white painted or retro-reflective tape for night
+visibility
+
+15. ■
+
+Grab rails and lanyards in good condition
+
+16. ■
+
+On-board air system, where provided, in good
+order
+
+17. ■
+
+Overall water-spray systems, where provided,
+tested and operational
+
+18. ■
+
+Operational instructions correctly displayed
+inside and outside boat(s)
+
+19. ■
+
+VHF radio-telephone, where provided, in good
+order
+
+Notes:
+1. Engine must be able to start without ‘magic spray’ (engine spray).
+2. Test for deterioration of gel coat and fibre layers and check for
+glazing of the gel coat.
+3. The lifeboat capacity which is marked on the outside of the boat
+should be the same as the number on the certificate of approval.
+
+Marine Life-Saving Appliances
+© Lloyd’s Register / UK P&I CLUB, 2008
+
+Page 10
+
+5. Free-fall lifeboats
+
+At all times, all equipment should be ready for operation, well
+maintained and inspected regularly.
+1. ■
+
+Correctly secured and stowed
+
+2. ■
+
+Well maintained with seat belts and head
+restraints in good order
+
+3. ■
+
+Hook release well maintained and charged with
+hydrostatic oil as necessary
+
+Marine Life-Saving Appliances
+© Lloyd’s Register / UK P&I CLUB, 2008
+
+Page 11
+
+6. Lifeboat inventory
+
+At all times, all equipment should be available, ready for
+operation, well maintained and inspected regularly.
+1. ■
+
+Distress flares in date
+
+2. ■
+
+Stores correctly maintained and well stowed
+including water and rations
+
+3. ■
+
+Buoyant oars and rowlocks, where required
+
+4. ■
+
+Protecting cover provided
+
+5. ■
+
+Sails provided, where required
+
+6. ■
+
+Sea anchor with shock resistant hawser and a
+tripping line
+Corroded stores
+compartment
+
+Note:
+The above items are those which are most commonly found deficient by
+Port State Control Officers. A full list of lifeboat stores / inventory can be
+found in the LSA Code - International Life-Saving Appliance Code.
+
+Marine Life-Saving Appliances
+© Lloyd’s Register / UK P&I CLUB, 2008
+
+Page 12
+
+7. Inflatable Liferafts
+
+At all times, all equipment should be ready for operation, well
+maintained and inspected regularly.
+1. ■
+
+Weak link correctly positioned and hydrostatic
+release in date
+
+2. ■
+
+Number and capacity as per Form E or Form P
+
+3. ■
+
+Fall wires to be maintained as per SOLAS
+
+4. ■
+
+Launching arrangements approved by
+manufacture and instructions clearly visible
+
+5. ■
+
+Correctly stowed, secured and clear of
+obstructions and free from damage to
+packaging and sealing
+
+6. ■
+
+Correctly positioned on board
+
+7. ■
+
+Correctly marked with ships’ name, servicing
+details, validity period and capacity
+
+8. ■
+
+Painter of adequate length according to the
+stowed height to the water
+
+Note:
+If a forward liferaft is required, it should be provided with an
+embarkation ladder, emergency lighting and the required number of
+lifejackets. This is also applicable to the aft liferaft of many ro-ro ships
+and some other ships with forward accommodation.
+
+Marine Life-Saving Appliances
+© Lloyd’s Register / UK P&I CLUB, 2008
+
+Page 13
+
+8. Rescue boats (if fitted)
+
+At all times, all equipment required in accordance with the LSA
+Code should be ready for operation, well maintained and
+inspected regularly.
+Also see deficiencies relating to lifeboats.
+1. ■
+
+Stowed and positioned correctly
+
+2. ■
+
+Inventory correct and up-to-date
+
+3. ■
+
+Launching and recovery arrangements
+
+4. ■
+
+Lighting, emergency lighting and signs
+
+5. ■
+
+Inflatable compartments appropriately
+pressurised
+
+6. ■
+
+Propeller guard in place
+
+7. ■
+
+Rescue boat personnel documented and fully
+familiar with all details of launching and
+operation
+
+8. ■
+
+Engine should be serviced in accordance with
+the engine manual
+
+Marine Life-Saving Appliances
+© Lloyd’s Register / UK P&I CLUB, 2008
+
+Page 14
+
+9. Miscellaneous
+
+At all times, all equipment should be ready for operation, well
+maintained and inspected regularly.
+1. ■
+
+Lifebuoys
+– correct numbers and location with appropriate
+marking
+– Lights and lines of correct type and fitted and
+rigged as per SOLAS
+– bridge wing man overboard light and smoke floats
+in date, correctly rigged, not damaged and fitted
+to correct weight lifebuoys
+
+2. ■
+
+Lifejackets and inflatable lifejackets
+– correct numbers and location with appropriate
+marking
+– infant lifejackets to be provided, if appropriate and
+marked, as necessary
+– in good condition, securing tapes not knotted and
+not rotten
+– lights not cracked and in date
+– servicing, where applicable
+– equipped with operational whistle
+– reflective tapes in good order
+
+3. ■
+
+Immersion suits, if required
+– correct numbers, correctly positioned and in good
+condition
+
+4. ■
+
+Radio life-saving appliances
+– float-free EPIRB checked for date verification of
+hydrostatic release unit (HRU) and batteries
+– at least one SART provided on each side of the
+bridge and battery dates verified
+
+Marine Life-Saving Appliances
+© Lloyd’s Register / UK P&I CLUB, 2008
+
+Page 15
+
+9.
+
+Miscellaneous, continued
+
+5. ■
+
+2-way radiotelephone apparatus for survival
+craft
+– 2 or 3 sets as applicable to ship type and size
+– spare sealed lithium batteries available for all sets
+and in date
+– do not use sets for general communication on
+board
+
+6. ■
+
+General emergency alarm is functional
+
+7. ■
+
+Line throwing appliances
+– appropriate numbers
+– lines in good condition and inspected
+– instructions in use provided
+
+Notes:
+1. In the case of large ships with high accommodation blocks, which
+have lifeboats stowed considerably lower, SARTS may be stowed each
+side in the vicinity of the lifeboats.
+2. In the case of a stern-launched freefall lifeboat, one SART is kept on
+the bridge and one SART is kept in the vicinity of the lifeboat.
+
+Marine Life-Saving Appliances
+© Lloyd’s Register / UK P&I CLUB, 2008
+
+Page 16
+
+10. Drills
+
+At all times, all equipment should be ready for operation, well
+maintained and inspected regularly.
+1. ■
+
+Drills are to be carried out in accordance with
+SOLAS
+– check that the sheaves are running free
+– check winch operation, brakes and clutch
+– check man ropes
+– check condition and attachments of the bowsing
+tackles
+– check davit limit switches
+– check crew familiarisation with fire and abandon
+ship drills
+
+2. ■
+
+On-board training and instructions
+– manuals available including maintenance
+– ongoing training and familiarisation with all
+equipment
+
+3. ■
+
+Abandon ship drill
+– lifeboats and rescue boats to be launched,
+lowered and manoeuvred in water in accordance
+with SOLAS and flag Administration requirements.
+
+4. ■
+
+Man Overboard drills carried out
+– crew musters
+– rescue boat launched
+– Williamson Turn (Man overboard turn) completed
+
+Note:
+IMO MSC.1/Circ.1206 provides guidance on ‘Measures To Prevent
+Accidents With Lifeboats’.
+
+Marine Life-Saving Appliances
+© Lloyd’s Register / UK P&I CLUB, 2008
+
+Page 17
+
+The Lloyd’s Register Group is an independent risk management
+organisation that works to improve its clients’ quality, safety, environmental
+and business performance throughout the world. Our expertise and
+activities cover shipping, railways, other land-based industries and oil and
+gas. Working from around 175 offices we employ some 5,000 personnel.
+We operate independently of any government or other body.
+Services are provided by members of the Lloyd’s Register Group.
+Lloyd’s Register, Lloyd’s Register EMEA and Lloyd’s Register Asia are
+exempt charities under the UK Charities Act 1993.
+To order additional copies of the pocket Checklist and others in this
+series, please visit the Lloyd’s Register Group web site www.lr.org.
+Lloyd’s Register EMEA
+T +44 20 7709 9166
+E emea@lr.org
+
+Lloyd’s Register Asia
+T +852 2287 9333
+E asia@lr.org
+
+Lloyd’s Register Americas, Inc.
+T +1 281 675 3100
+E americas@lr.org
+
+The UK P&I Club is the world's largest mutual P&I club currently insuring over
+150 million gross tons of owned and chartered shipping in sixty countries.
+The Club publishes loss prevention material through a wide range of
+media on topics such as hazardous cargo in containers, human error,
+personal injury and maritime security.
+The full range of Club activities can be viewed at www.ukpandi.com
+London
+T +44 20 7283 4646
+
+Piraeus
+T +30 210 429 1200
+
+Tokyo
+T +81 3 5442 6110
+
+New Jersey
+T +1 201 557 7300
+
+E karl.lumbers@thomasmiller.com
+
+Marine Life-saving Appliances
+© Lloyd’s Register / UK P&I CLUB, 2008
+
+Hong Kong
+T +852 2832 9301
+
+
