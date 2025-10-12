@@ -1,1 +1,4 @@
-Task,Description,Status
+Category,Duty,Regulation,Tech_Integration,Gaps
+Navigation,Maintain watch,SOLAS Ch. V,ECDIS AI,Training needed
+Safety,LSA inspections,SOLAS Ch. III,Python script,AI integration
+Safety,FFA maintenance,SOLAS Ch. II-2,AI prediction,Validation
