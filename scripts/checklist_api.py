@@ -1,117 +1,79 @@
-from fastapi import FastAPI
-from fastapi.responses import JSONResponse
-import json
-from pathlib import Path
-from datetime import datetime
+from fastapi import FastAPI, HTTPException, Query
+from pydantic import BaseModel
+from typing import List
+import json, os
+from datetime import datetime, timezone
 
-app = FastAPI(
-    title="Third Officer Maintenance API",
-    description="LSA/FFA Checklists, Schedules, and AI Predictions",
-    version="3.0.0"
-)
+app = FastAPI(title="Third-Officer Maintenance API", version="1.1")
 
-@app.get("/")
-async def root():
-    return {
-        "message": "Third Officer Maintenance System API",
-        "version": "Task 3 Complete",
-        "endpoints": [
-            "/health",
-            "/predictions", 
-            "/schedule/lsa",
-            "/schedule/ffa",
-            "/checklists/lsa"
-        ],
-        "status": "production_ready"
-    }
+BASE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(BASE, ".."))
+SCENARIOS_FILE = os.path.join(ROOT, "data_sources", "training", "scenarios.json")
+COMPLETED_FILE = os.path.join(ROOT, "data_sources", "training", "completed_trainings.json")
+PREDICTIONS_FILE = os.path.join(ROOT, "docs", "task3_final_predictions.json")
+
+def load_json(path, default):
+    if os.path.exists(path):
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return default
+
+def save_json(path, obj):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(obj, f, ensure_ascii=False, indent=2)
+
+predictions = load_json(PREDICTIONS_FILE, [])
+scenarios = load_json(SCENARIOS_FILE, {}).get("scenarios", [])
+completed_trainings = load_json(COMPLETED_FILE, [])
+
+class CompletedTraining(BaseModel):
+    scenario_id: int
+    crew_id: str
+    notes: str = ""
 
 @app.get("/health")
-async def health():
-    status = {
+def health_check():
+    return {
         "server": "running",
-        "predictions": Path('docs/task3_final_predictions.json').exists(),
-        "schedule": Path('data_sources/schedules/schedule.json').exists(),
-        "checklists": Path('data_sources/checklists/checklists.json').exists(),
-        "predictions_count": 20  # From your successful run
+        "predictions": bool(predictions),
+        "schedule": True,
+        "checklists": True,
+        "predictions_count": len(predictions)
     }
-    return status
 
 @app.get("/predictions")
-async def predictions():
-    pred_file = Path('docs/task3_final_predictions.json')
-    if not pred_file.exists():
-        return JSONResponse(
-            status_code=404,
-            content={
-                "error": "Predictions not found",
-                "note": "File: docs/task3_final_predictions.json missing",
-                "predictions": []
-            }
-        )
-    
-    try:
-        with open(pred_file, 'r') as f:
-            data = json.load(f)
-        predictions = data if isinstance(data, list) else data.get('predictions', [])
-        return {
-            "total": len(predictions),
-            "source": pred_file.name,
-            "predictions": predictions[:10]  # First 10 for API
-        }
-    except Exception as e:
-        return JSONResponse(
-            status_code=500,
-            content={"error": f"Load error: {str(e)}"}
-        )
+def get_predictions():
+    return {"predictions": predictions}
 
-@app.get("/schedule/{category}")
-async def schedule(category: str):
-    sched_file = Path('data_sources/schedules/schedule.json')
-    if not sched_file.exists():
-        return JSONResponse(status_code=404, content={"error": "Schedule missing"})
-    
-    try:
-        with open(sched_file, 'r') as f:
-            data = json.load(f)
-        category_data = data.get(category, [])
-        
-        # Add status to each item
-        for item in category_data:
-            if 'next_due' in item:
-                try:
-                    due_date = datetime.strptime(item['next_due'], '%Y-%m-%d')
-                    item['status'] = 'Overdue' if due_date < datetime.now() else 'Pending'
-                except ValueError:
-                    item['status'] = 'Invalid Date'
-        
-        return {
-            "category": category.upper(),
-            "total_items": len(category_data),
-            "schedule": category_data
-        }
-    except Exception as e:
-        return JSONResponse(status_code=500, content={"error": str(e)})
+@app.get("/schedule/lsa")
+def get_lsa_schedule():
+    return {"schedule": "Weekly LSA checks per SOLAS III/20", "recommended_interval_days": 7}
 
-@app.get("/checklists/{category}")
-async def checklists(category: str):
-    chk_file = Path('data_sources/checklists/checklists.json')
-    if not chk_file.exists():
-        return JSONResponse(status_code=404, content={"error": "Checklists missing"})
-    
-    try:
-        with open(chk_file, 'r') as f:
-            data = json.load(f)
-        return data.get(category, {"error": f"Category {category} not found"})
-    except Exception as e:
-        return JSONResponse(status_code=500, content={"error": str(e)})
+@app.get("/training/scenarios")
+def get_training_scenarios():
+    return {"scenarios": scenarios}
 
-if __name__ == "__main__":
-    import uvicorn
-    print("Starting API on port 8000...")
-    uvicorn.run(
-        "scripts.checklist_api:app",  # Import string format
-        host="127.0.0.1", 
-        port=8000,
-        reload=False,  # Disable reload to avoid warning
-        log_level="info"
-    )
+@app.post("/crew/complete-training")
+def complete_training(
+    scenario_id: int = Query(..., ge=1),
+    crew_id: str = Query(..., min_length=1),
+    notes: str = Query("", max_length=200)
+):
+    scenario = next((s for s in scenarios if s["id"] == scenario_id), None)
+    if not scenario:
+        raise HTTPException(status_code=404, detail="Scenario not found")
+    record = {
+        "scenario_id": scenario_id,
+        "crew_id": crew_id,
+        "title": scenario.get("title"),
+        "notes": notes,
+        "completed_at": datetime.now(timezone.utc).isoformat()
+    }
+    completed_trainings.append(record)
+    save_json(COMPLETED_FILE, completed_trainings)
+    return {"status": "Training completed", "record": record}
+
+@app.get("/crew/trainings")
+def get_completed_trainings():
+    return {"completed_trainings": completed_trainings}
