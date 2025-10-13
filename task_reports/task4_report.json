@@ -1,0 +1,26 @@
+{
+  "task_id": 4,
+  "task_name": "Crew Training Endpoints",
+  "date": "2025-10-13 11:27:05",
+  "branch": "main",
+  "commit": "8d25bda93a1a8bd970edb0cab9c258910d078855",
+  "responsible": "ZWE",
+  "objective": "Implement crew training endpoints to manage scenario-based training",
+  "files_changed": [
+    "scripts/checklist_api.py",
+    "data_sources/training/completed_trainings.json"
+  ],
+  "endpoints_features": [
+    "GET /training/scenarios",
+    "POST /crew/complete-training",
+    "GET /crew/trainings"
+  ],
+  "testing_results": [
+    "GET /training/scenarios returned full list of scenarios",
+    "POST /crew/complete-training recorded data correctly",
+    "GET /crew/trainings returned all completed training entries",
+    "Server health and previous endpoints remained functional"
+  ],
+  "status": "Completed",
+  "next_step": "Please generate Task 5 for the project"
+}
