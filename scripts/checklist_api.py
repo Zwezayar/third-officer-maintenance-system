@@ -77,3 +77,23 @@ def complete_training(
 @app.get("/crew/trainings")
 def get_completed_trainings():
     return {"completed_trainings": completed_trainings}
+@app.get("/alerts/overdue")
+def get_overdue_alerts():
+    conn = get_db()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM maintenance_schedules WHERE next_due <= ?", (datetime.now().strftime("%Y-%m-%d"),))
+    overdue = [dict(row) for row in cursor.fetchall()]
+    conn.close()
+    
+    alerts = [
+        {
+            "equipment": item["equipment"],
+            "task": item["task"],
+            "due_date": item["next_due"],
+            "regulation": item["regulation"],
+            "alert": f"Overdue: {item['task']} for {item['equipment']} due by {item['next_due']}"
+        }
+        for item in overdue
+    ]
+    return {"alerts": alerts}
+

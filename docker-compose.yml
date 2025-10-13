@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    image: third-officer-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./database:/app/database
+      - ./data_sources:/app/data_sources
+      - ./logs:/app/logs
+    networks:
+      - ship-net
+
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+    networks:
+      - ship-net
+
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    networks:
+      - ship-net
+
+  dashboard:
+    build: .
+    image: third-officer-api
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./database:/app/database
+      - ./data_sources:/app/data_sources
+      - ./logs:/app/logs
+    command: ["streamlit", "run", "dashboard/dashboard.py", "--server.port=8501", "--server.address=0.0.0.0"]
+    networks:
+      - ship-net
+
+networks:
+  ship-net:
+    driver: bridge
