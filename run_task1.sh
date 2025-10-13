@@ -71,7 +71,7 @@ echo ""
 echo "🚀 NEXT STEPS:"
 echo "1. source venv/bin/activate"
 echo "2. git commit -m 'Task 1 complete'"
-echo "3. git push origin main  (use SSH or new PAT)"
+echo "3. git push origin main  (use SSH)"
 echo "4. Ready for Task 2: Checklist Digitization"
 
 echo "🎉 Task 1 setup complete - manually push to GitHub"

@@ -1,0 +1,30 @@
+[
+  {
+    "scenario_id": 1,
+    "crew_id": "CREW001",
+    "title": "Lifeboat Release Failure Drill",
+    "notes": "ok",
+    "completed_at": "2025-10-13T04:38:01.414884+00:00"
+  },
+  {
+    "scenario_id": 1,
+    "crew_id": "CREW001",
+    "title": "Lifeboat Release Failure Drill",
+    "notes": "ok",
+    "completed_at": "2025-10-13T04:38:49.027482+00:00"
+  },
+  {
+    "scenario_id": 1,
+    "crew_id": "CREW001",
+    "title": "Lifeboat Release Failure Drill",
+    "notes": "",
+    "completed_at": "2025-10-13T05:17:20.559790+00:00"
+  },
+  {
+    "scenario_id": 1,
+    "crew_id": "CREW001",
+    "title": "Lifeboat Release Failure Drill",
+    "notes": "",
+    "completed_at": "2025-10-13T05:22:44.055756+00:00"
+  }
+]
