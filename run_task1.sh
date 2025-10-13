@@ -1,25 +1,77 @@
 #!/bin/bash
+# Task 1 Setup Script - SECURE VERSION (No PATs)
 
-git config --global user.name "Zwe Zayar"
-git config --global user.email "zwezayar88@gmail.com"
+set -e  # Exit on error
 
-git remote set-url origin https://zwezayar88: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@github.com/Zwezayar/third-officer-maintenance-system.git
+echo "🚀 Starting Task 1: Third Officer Responsibilities Setup"
 
-mkdir -p backend/data docs scripts logs output
+# Create directories
+mkdir -p docs output backend/data scripts logs
 
-touch docs/responsibilities_matrix.csv docs/risk_assessment.md docs/risk_analysis.json
+# Generate responsibilities matrix
+cat > docs/responsibilities_matrix.csv << 'CSV_EOF'
+Category,Duty,Regulation,Tech_Integration,Gaps
+Navigation,Maintain watch,SOLAS Ch. V,ECDIS AI collision avoidance,ECDIS training needed
+Safety,LSA inspections,SOLAS Ch. III,Python expiry checker,SEA-LION integration
+Safety,FFA maintenance,SOLAS Ch. II-2,AI deficiency prediction,Model validation
+Medical,Crew health checks,MLC 2022,Health monitoring app,App access
+Logs,Deck log entries,STCW A-II/1,Digital logbook,Digital training
+Defects,Report to C/O,ISM Code,Mobile reporting,Standard format
+Drills,LSA/FFA drills,SOLAS Ch. III,AI drill scheduler,Drill templates
+Training,Onboard training,STCW A-II/1,AI modules,Module access
+CSV_EOF
 
-echo "Task,Description,Status" > docs/responsibilities_matrix.csv
-echo "# Risk Assessment" > docs/risk_assessment.md
-echo '{"status":"pending","tasks":[]}' > docs/risk_analysis.json
+# Risk assessment
+cat > docs/risk_assessment.md << 'MD_EOF'
+# Risk Assessment for Third Officer
 
+## High Risk Items
+- **Lifeboat Release (309 defects)**: Weekly tests (SOLAS III/20)
+- **Fire Dampers (287 failures)**: Monthly checks (SOLAS II-2)
+- **ECDIS Cyber Risk**: Updates per MSC.428(98)
+
+## Mitigations
+- AI scheduled inspections
+- Digital checklists
+- Automated alerts
+MD_EOF
+
+# JSON analysis template
+cat > docs/risk_analysis.json << 'JSON_EOF'
+{
+  "high_risk": ["Lifeboat Release", "Fire Dampers"],
+  "mitigations": {
+    "lifeboat": "Weekly visual + monthly load test",
+    "fire_dampers": "Monthly functional test"
+  },
+  "compliance": "SOLAS 2025 ready"
+}
+JSON_EOF
+
+# Generate PDF if pandoc available
 if command -v pandoc >/dev/null 2>&1; then
-    pandoc docs/risk_assessment.md -o output/risk_assessment.pdf
+    echo "Generating PDF report..."
+    pandoc docs/risk_assessment.md -o docs/task_1_report.pdf || echo "PDF optional - Markdown ready"
+else
+    echo "Pandoc not found - Markdown report ready"
 fi
 
-git add docs/ backend/ output/ scripts/
-git commit -m "✅ Task 1 completed: documents generated and PDF report"
-git push origin main
+# Git operations (SECURE - no PATs)
+echo "Setting up Git..."
+git add docs/ backend/ scripts/ .gitignore || true
+git status
 
-echo "🎉 Task 1 fully completed and pushed to GitHub!"
+echo "✅ Task 1 files created:"
+echo "- docs/responsibilities_matrix.csv"
+echo "- docs/risk_assessment.md"
+echo "- docs/task_1_report.pdf (if pandoc installed)"
+echo "- Git ready for manual push"
 
+echo ""
+echo "🚀 NEXT STEPS:"
+echo "1. source venv/bin/activate"
+echo "2. git commit -m 'Task 1 complete'"
+echo "3. git push origin main  (use SSH or new PAT)"
+echo "4. Ready for Task 2: Checklist Digitization"
+
+echo "🎉 Task 1 setup complete - manually push to GitHub"
