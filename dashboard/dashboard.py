@@ -6,6 +6,8 @@ import plotly.express as px
 from datetime import datetime, timedelta
 import logging
 import json
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 # Setup logging for audit trails
 logging.basicConfig(
@@ -55,7 +57,9 @@ def get_cached_response(endpoint):
         result = cursor.fetchone()
         conn.close()
         if result:
+            logging.info(f"Retrieved cached response for {endpoint} from {result['timestamp']}")
             return json.loads(result['data']), result['timestamp']
+        logging.warning(f"No cached response for {endpoint}")
         return None, None
     except Exception as e:
         logging.error(f"Failed to get cached response for {endpoint}: {str(e)}")
@@ -80,6 +84,11 @@ def mark_task_completed(task_id):
     except Exception as e:
         logging.error(f"Failed to mark task {task_id} as completed: {str(e)}")
         return False
+
+# Setup HTTP session with retries
+session = requests.Session()
+retries = Retry(total=3, backoff_factor=0.1, status_forcelist=[500, 502, 503, 504])
+session.mount('http://', HTTPAdapter(max_retries=retries))
 
 # Authentication
 def check_password():
@@ -119,9 +128,11 @@ def main_dashboard():
     st.subheader("SEA-LION Real-Time Alerts")
     if st.button("Refresh Alerts"):
         try:
-            response = requests.get("http://api:8000/alerts/overdue")
+            logging.info("Attempting to fetch alerts from http://api:8000/alerts/overdue")
+            response = session.get("http://api:8000/alerts/overdue", timeout=5)
             response.raise_for_status()
             alerts = response.json()["alerts"]
+            logging.info(f"Received alerts: {alerts}")
             cache_api_response("alerts/overdue", alerts)
             if alerts:
                 df = pd.DataFrame(alerts)
@@ -131,6 +142,7 @@ def main_dashboard():
                 logging.info("SEA-LION alerts refreshed")
             else:
                 st.write("No overdue tasks")
+                logging.info("No overdue tasks found")
         except requests.RequestException as e:
             st.warning(f"Offline mode: Using cached alerts ({str(e)})")
             alerts, timestamp = get_cached_response("alerts/overdue")
@@ -142,6 +154,7 @@ def main_dashboard():
                 logging.info(f"Displayed cached SEA-LION alerts from {timestamp}")
             else:
                 st.error("No cached alerts available")
+                logging.warning("No cached alerts available")
 
     # Maintenance Schedules
     st.subheader("Maintenance Schedules")
@@ -185,9 +198,11 @@ def main_dashboard():
     # Prometheus Metrics Visualization
     st.subheader("API Performance Metrics")
     try:
-        response = requests.get("http://api:8000/metrics")
+        logging.info("Attempting to fetch metrics from http://api:8000/metrics")
+        response = session.get("http://api:8000/metrics", timeout=5)
         response.raise_for_status()
         metrics = response.text
+        logging.info(f"Received metrics: {metrics[:100]}...")
         cache_api_response("metrics", {"metrics": metrics})
         st.text_area("Raw Metrics", metrics, height=200)
         request_counts = pd.DataFrame({
@@ -211,6 +226,7 @@ def main_dashboard():
             logging.info(f"Displayed cached metrics from {timestamp}")
         else:
             st.error("No cached metrics available")
+            logging.warning("No cached metrics available")
 
     # Compliance Summary
     st.subheader("Compliance Status")
