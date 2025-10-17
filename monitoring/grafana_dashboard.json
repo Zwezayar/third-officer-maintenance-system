@@ -1,0 +1,76 @@
+{
+  "dashboard": {
+    "id": null,
+    "uid": "adps7kw",
+    "title": "Third Officer API Metrics",
+    "panels": [
+      {
+        "id": 1,
+        "title": "API Request Counts",
+        "type": "barchart",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "ff1ab8armpssge"
+        },
+        "targets": [
+          {
+            "expr": "api_requests_total",
+            "legendFormat": "{{endpoint}}",
+            "format": "time_series",
+            "refId": "A"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            }
+          }
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 8
+        }
+      },
+      {
+        "id": 2,
+        "title": "API Latency",
+        "type": "timeseries",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "ff1ab8armpssge"
+        },
+        "targets": [
+          {
+            "expr": "api_request_latency_seconds_sum",
+            "legendFormat": "{{endpoint}}",
+            "format": "time_series",
+            "refId": "A"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            }
+          }
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 0
+        }
+      }
+    ],
+    "schemaVersion": 42,
+    "time": {
+      "from": "2025-10-16T18:58:55.871Z",
+      "to": "2025-10-17T06:58:55.871Z"
+    },
+    "timezone": "browser"
+  },
+  "overwrite": true
+}

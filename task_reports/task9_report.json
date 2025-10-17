@@ -19,10 +19,10 @@
   "tests": {
     "alerts": "SEA-LION alerts displayed with refresh button and bar chart",
     "task_completion": "Task ID 1 marked as completed, verified in database",
-    "metrics": "Prometheus metrics displayed with bar and line charts in Grafana",
+    "metrics": "Prometheus metrics displayed with bar and time series charts in Grafana",
     "external_access": "Dashboard accessible via ngrok URL",
-    "grafana": "Dashboard JSON exported with bar and line charts"
+    "grafana": "Dashboard JSON exported with bar and time series charts"
   },
   "git_commit": "$(git rev-parse HEAD)",
-  "timestamp": "2025-10-17T10:30:00+06:30"
+  "timestamp": "2025-10-17T13:00:00+06:30"
 }
