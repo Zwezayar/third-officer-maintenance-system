@@ -23,6 +23,6 @@
     "external_access": "Dashboard accessible via ngrok URL",
     "grafana": "Dashboard JSON exported with bar and time series charts"
   },
-  "git_commit": "$(git rev-parse HEAD)",
-  "timestamp": "2025-10-17T13:30:00+06:30"
+  "git_commit": "42d87fd",
+  "timestamp": "2025-10-17T14:30:00+06:30"
 }
