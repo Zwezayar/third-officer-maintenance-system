@@ -18,6 +18,6 @@
     "cache_metrics": "Cached /metrics response displayed in offline mode",
     "audit_log": "Logged caching and offline mode actions"
   },
-  "git_commit": "055b9fea33609ec098068544b7048e68bd7acfb0",
+  "git_commit": "398cb9a8c00b87b0cc199de4afc1ea76771da50e",
   "timestamp": "2025-10-17T19:00:00+06:30"
 }
