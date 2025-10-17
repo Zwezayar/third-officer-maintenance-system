@@ -91,7 +91,7 @@ retries = Retry(total=5, backoff_factor=0.2, status_forcelist=[500, 502, 503, 50
 session.mount('http://', HTTPAdapter(max_retries=retries))
 
 # API base URL
-API_BASE_URL = "http://172.19.0.4:8000"
+API_BASE_URL = "http://api:8000"
 
 # Authentication
 def check_password():
