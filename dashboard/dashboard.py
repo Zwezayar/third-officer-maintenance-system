@@ -87,8 +87,11 @@ def mark_task_completed(task_id):
 
 # Setup HTTP session with retries
 session = requests.Session()
-retries = Retry(total=3, backoff_factor=0.1, status_forcelist=[500, 502, 503, 504])
+retries = Retry(total=5, backoff_factor=0.2, status_forcelist=[500, 502, 503, 504])
 session.mount('http://', HTTPAdapter(max_retries=retries))
+
+# API base URL
+API_BASE_URL = "http://172.19.0.4:8000"
 
 # Authentication
 def check_password():
@@ -127,13 +130,15 @@ def main_dashboard():
     # Real-Time SEA-LION Alerts
     st.subheader("SEA-LION Real-Time Alerts")
     if st.button("Refresh Alerts"):
+        endpoint = "alerts/overdue"
         try:
-            logging.info("Attempting to fetch alerts from http://api:8000/alerts/overdue")
-            response = session.get("http://api:8000/alerts/overdue", timeout=5)
+            url = f"{API_BASE_URL}/{endpoint}"
+            logging.info(f"Attempting to fetch alerts from {url}")
+            response = session.get(url, timeout=5)
             response.raise_for_status()
             alerts = response.json()["alerts"]
             logging.info(f"Received alerts: {alerts}")
-            cache_api_response("alerts/overdue", alerts)
+            cache_api_response(endpoint, alerts)
             if alerts:
                 df = pd.DataFrame(alerts)
                 st.dataframe(df)
@@ -145,7 +150,7 @@ def main_dashboard():
                 logging.info("No overdue tasks found")
         except requests.RequestException as e:
             st.warning(f"Offline mode: Using cached alerts ({str(e)})")
-            alerts, timestamp = get_cached_response("alerts/overdue")
+            alerts, timestamp = get_cached_response(endpoint)
             if alerts:
                 df = pd.DataFrame(alerts)
                 st.dataframe(df)
@@ -197,13 +202,15 @@ def main_dashboard():
 
     # Prometheus Metrics Visualization
     st.subheader("API Performance Metrics")
+    endpoint = "metrics"
     try:
-        logging.info("Attempting to fetch metrics from http://api:8000/metrics")
-        response = session.get("http://api:8000/metrics", timeout=5)
+        url = f"{API_BASE_URL}/{endpoint}"
+        logging.info(f"Attempting to fetch metrics from {url}")
+        response = session.get(url, timeout=5)
         response.raise_for_status()
         metrics = response.text
         logging.info(f"Received metrics: {metrics[:100]}...")
-        cache_api_response("metrics", {"metrics": metrics})
+        cache_api_response(endpoint, {"metrics": metrics})
         st.text_area("Raw Metrics", metrics, height=200)
         request_counts = pd.DataFrame({
             "endpoint": ["/health", "/alerts/overdue"],
@@ -214,7 +221,7 @@ def main_dashboard():
         logging.info("Prometheus metrics displayed")
     except requests.RequestException as e:
         st.warning(f"Offline mode: Using cached metrics ({str(e)})")
-        metrics, timestamp = get_cached_response("metrics")
+        metrics, timestamp = get_cached_response(endpoint)
         if metrics:
             st.text_area("Raw Metrics (Cached)", metrics["metrics"], height=200)
             request_counts = pd.DataFrame({
