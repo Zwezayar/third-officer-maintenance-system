@@ -3,18 +3,16 @@ from datetime import datetime
 import sqlite3
 import logging
 from prometheus_client import Counter, Histogram, generate_latest, REGISTRY
+from fastapi.responses import PlainTextResponse
 
-# Configure logging
 logging.basicConfig(filename="/app/logs/api_audit.log", level=logging.INFO,
                     format="%(asctime)s - %(levelname)s - %(message)s")
 
 app = FastAPI()
 
-# Prometheus metrics
 REQUESTS = Counter("api_requests_total", "Total API requests", ["endpoint"])
 LATENCY = Histogram("api_request_latency_seconds", "API request latency", ["endpoint"])
 
-# Log action to audit_log table and file
 def log_action(action, user, details):
     try:
         conn = sqlite3.connect("/app/database/ship_maintenance.db")
@@ -52,7 +50,6 @@ async def get_overdue_alerts():
                  "last_completed": row[3], "next_due": row[4]}
                 for row in cursor.fetchall()
             ]
-            # Cache the response
             cursor.execute("""
                 INSERT OR REPLACE INTO cache (key, value, timestamp)
                 VALUES (?, ?, ?)
@@ -66,7 +63,7 @@ async def get_overdue_alerts():
             log_action("fetch_alerts_error", "system", f"Error fetching alerts: {str(e)}")
             raise
 
-@app.get("/metrics")
+@app.get("/metrics", response_class=PlainTextResponse)
 async def metrics():
     with LATENCY.labels(endpoint="/metrics").time():
         REQUESTS.labels(endpoint="/metrics").inc()
