@@ -33,3 +33,4 @@ logs/*.log
 # IDE
 .vscode/
 .idea/
+third-officer-maintenance-system-backup-*.tar.gz
