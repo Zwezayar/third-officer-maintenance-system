@@ -1,61 +1,23 @@
 {
-  "task_id": 4,
-  "task_name": "Crew Training Module Implementation",
-  "date": "2025-10-13",
-  "branch": "main",
-  "commit": "6c3a72f",
-  "responsible": "ZWE",
-  "objective": "Implement crew training API endpoints and integrate with database",
-  "files_changed": [
-    "scripts/checklist_api.py",
-    "data_sources/training/scenarios.json",
-    "task_reports/task4_report.json"
-  ],
-  "endpoints_features": [
-    "GET /training/scenarios: Returns all scenarios",
-    "POST /crew/complete-training: Records training completion",
-    "GET /crew/trainings: Returns completed training records"
-  ],
-  "database_verification": [
-    "Predictions migrated from task3_final_predictions.json",
-    "Training records stored correctly in database/ship_maintenance.db"
-  ],
-  "testing_results": [
-    "All API endpoints functional",
-    "Data persists in SQLite database",
-    "Scenario completion tested for CREW001"
-  ],
+  "task": "Task 4: Audit Logging",
+  "step": "Step 2: Implement Audit Logging in API and Dashboard",
   "status": "Completed",
-  "next_step": "Task 5: Dat_
-
-cat > task_reports/task4_report.json << 'EOF'
-{
-  "task_id": 4,
-  "task_name": "Crew Training Module Implementation",
-  "date": "2025-10-13",
-  "branch": "main",
-  "commit": "6c3a72f",
-  "responsible": "ZWE",
-  "objective": "Implement crew training API endpoints and integrate with database",
-  "files_changed": [
-    "scripts/checklist_api.py",
-    "data_sources/training/scenarios.json",
-    "task_reports/task4_report.json"
+  "components": {
+    "api": "api/main.py",
+    "dashboard": "dashboard/dashboard.py",
+    "database": "database/ship_maintenance.db",
+    "audit_log": "logs/api_audit.log, logs/dashboard_audit.log"
+  },
+  "compliance": [
+    "MSC.428(98): Digital audit trails for all actions",
+    "STCW A-II/1: Auditable records for maintenance and training",
+    "SOLAS III/20, II-2/9: Traceable maintenance actions"
   ],
-  "endpoints_features": [
-    "GET /training/scenarios: Returns all scenarios",
-    "POST /crew/complete-training: Records training completion",
-    "GET /crew/trainings: Returns completed training records"
-  ],
-  "database_verification": [
-    "Predictions migrated from task3_final_predictions.json",
-    "Training records stored correctly in database/ship_maintenance.db"
-  ],
-  "testing_results": [
-    "All API endpoints functional",
-    "Data persists in SQLite database",
-    "Scenario completion tested for CREW001"
-  ],
-  "status": "Completed",
-  "next_step": "Task 5: Database Integration and Docker Deployment"
+  "tests": {
+    "api_logging": "Logged /alerts/overdue to audit_log table and api_audit.log",
+    "dashboard_logging": "Logged login and alert actions to audit_log table and dashboard_audit.log",
+    "offline_logging": "Logged cache usage in offline mode"
+  },
+  "git_commit": "$(git rev-parse HEAD)",
+  "timestamp": "$(date -u +'%Y-%m-%dT%H:%M:%S+00:00')"
 }
