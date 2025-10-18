@@ -1,21 +1,21 @@
 from fastapi import FastAPI
-import sqlite3
 from datetime import datetime
-from prometheus_client import Counter, Histogram, generate_latest
+import sqlite3
 import logging
+from prometheus_client import Counter, Histogram, generate_latest, REGISTRY
 
 # Configure logging
-logging.basicConfig(filename="/app/logs/api_audit.log", level=logging.INFO, 
+logging.basicConfig(filename="/app/logs/api_audit.log", level=logging.INFO,
                     format="%(asctime)s - %(levelname)s - %(message)s")
 
 app = FastAPI()
 
 # Prometheus metrics
-REQUESTS = Counter('api_requests_total', 'Total API requests', ['endpoint'])
-LATENCY = Histogram('api_request_latency_seconds', 'API request latency', ['endpoint'])
+REQUESTS = Counter("api_requests_total", "Total API requests", ["endpoint"])
+LATENCY = Histogram("api_request_latency_seconds", "API request latency", ["endpoint"])
 
+# Log action to audit_log table and file
 def log_action(action, user, details):
-    """Log action to audit_log table and file."""
     try:
         conn = sqlite3.connect("/app/database/ship_maintenance.db")
         cursor = conn.cursor()
@@ -31,31 +31,24 @@ def log_action(action, user, details):
 
 @app.get("/health")
 async def health_check():
-    with LATENCY.labels(endpoint='/health').time():
-        REQUESTS.labels(endpoint='/health').inc()
+    with LATENCY.labels(endpoint="/health").time():
         log_action("health_check", "system", "Health check performed")
         return {"status": "healthy"}
 
-@app.get("/metrics")
-async def metrics():
-    with LATENCY.labels(endpoint='/metrics').time():
-        REQUESTS.labels(endpoint='/metrics').inc()
-        log_action("fetch_metrics", "system", "Prometheus metrics fetched")
-        return generate_latest()
-
 @app.get("/alerts/overdue")
 async def get_overdue_alerts():
-    with LATENCY.labels(endpoint='/alerts/overdue').time():
-        REQUESTS.labels(endpoint='/alerts/overdue').inc()
+    with LATENCY.labels(endpoint="/alerts/overdue").time():
+        REQUESTS.labels(endpoint="/alerts/overdue").inc()
         try:
             conn = sqlite3.connect("/app/database/ship_maintenance.db")
             cursor = conn.cursor()
             cursor.execute("""
-                SELECT * FROM maintenance_schedules
+                SELECT id, equipment, task, last_completed, next_due
+                FROM maintenance_schedules
                 WHERE next_due < ?
             """, (datetime.now().strftime("%Y-%m-%d"),))
             alerts = [
-                {"id": row[0], "equipment": row[1], "task": row[2], 
+                {"id": row[0], "equipment": row[1], "task": row[2],
                  "last_completed": row[3], "next_due": row[4]}
                 for row in cursor.fetchall()
             ]
@@ -63,7 +56,7 @@ async def get_overdue_alerts():
             cursor.execute("""
                 INSERT OR REPLACE INTO cache (key, value, timestamp)
                 VALUES (?, ?, ?)
-            """, ("alerts/overdue", str({"alerts": alerts}), 
+            """, ("alerts/overdue", str({"alerts": alerts}),
                   datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
             conn.commit()
             conn.close()
@@ -72,3 +65,10 @@ async def get_overdue_alerts():
         except Exception as e:
             log_action("fetch_alerts_error", "system", f"Error fetching alerts: {str(e)}")
             raise
+
+@app.get("/metrics")
+async def metrics():
+    with LATENCY.labels(endpoint="/metrics").time():
+        REQUESTS.labels(endpoint="/metrics").inc()
+        log_action("fetch_metrics", "system", "Prometheus metrics fetched")
+        return generate_latest(REGISTRY).decode("utf-8")

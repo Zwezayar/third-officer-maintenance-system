@@ -1,21 +1,21 @@
+version: '3.8'
 services:
   api:
     build:
       context: .
-      dockerfile: Dockerfile.api
+      dockerfile: api/Dockerfile.api
     ports:
       - "8000:8000"
     volumes:
       - ./database:/app/database
       - ./logs:/app/logs
     networks:
-      ship-net:
-        aliases:
-          - api
+      - ship-net
+    container_name: third-officer-maintenance-system-api-1
   dashboard:
     build:
       context: .
-      dockerfile: Dockerfile.dashboard
+      dockerfile: dashboard/Dockerfile.dashboard
     ports:
       - "8501:8501"
     volumes:
@@ -23,24 +23,23 @@ services:
       - ./logs:/app/logs
     networks:
       - ship-net
-    depends_on:
-      - api
+    container_name: third-officer-maintenance-system-dashboard-1
   prometheus:
     image: prom/prometheus:latest
     ports:
       - "9090:9090"
     volumes:
-      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
     networks:
       - ship-net
+    container_name: third-officer-maintenance-system-prometheus-1
   grafana:
     image: grafana/grafana:latest
     ports:
       - "3000:3000"
-    volumes:
-      - ./monitoring:/var/lib/grafana
     networks:
       - ship-net
+    container_name: third-officer-maintenance-system-grafana-1
 networks:
   ship-net:
     driver: bridge
