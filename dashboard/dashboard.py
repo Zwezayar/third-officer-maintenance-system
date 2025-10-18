@@ -9,19 +9,16 @@ import json
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-# Setup logging for audit trails
 logging.basicConfig(
     filename="logs/dashboard_audit.log",
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
-# Initialize session state
 if 'authenticated' not in st.session_state:
     st.session_state.authenticated = False
     logging.info("Initialized session state: authenticated=False")
 
-# Database connection
 def get_db():
     try:
         conn = sqlite3.connect("database/ship_maintenance.db")
@@ -32,23 +29,21 @@ def get_db():
         logging.error(f"Database connection failed: {str(e)}")
         raise e
 
-# Cache API response
 def cache_api_response(endpoint, data):
     try:
         conn = get_db()
         cursor = conn.cursor()
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        cursor.execute("""
-            INSERT OR REPLACE INTO cache (endpoint, data, timestamp)
-            VALUES (?, ?, ?)
-        """, (endpoint, json.dumps(data), timestamp))
+        cursor.execute(
+            "INSERT OR REPLACE INTO cache (endpoint, data, timestamp) VALUES (?, ?, ?)",
+            (endpoint, json.dumps(data), timestamp)
+        )
         conn.commit()
         conn.close()
         logging.info(f"Cached response for {endpoint} with data: {data}")
     except Exception as e:
         logging.error(f"Failed to cache response for {endpoint}: {str(e)}")
 
-# Get cached API response
 def get_cached_response(endpoint):
     try:
         conn = get_db()
@@ -65,18 +60,16 @@ def get_cached_response(endpoint):
         logging.error(f"Failed to get cached response for {endpoint}: {str(e)}")
         return None, None
 
-# Mark maintenance task as completed
 def mark_task_completed(task_id):
     try:
         conn = get_db()
         cursor = conn.cursor()
         today = datetime.now().strftime("%Y-%m-%d")
         next_due = (datetime.now() + timedelta(days=7)).strftime("%Y-%m-%d")
-        cursor.execute("""
-            UPDATE maintenance_schedules 
-            SET last_completed = ?, next_due = ? 
-            WHERE id = ?
-        """, (today, next_due, task_id))
+        cursor.execute(
+            "UPDATE maintenance_schedules SET last_completed = ?, next_due = ? WHERE id = ?",
+            (today, next_due, task_id)
+        )
         conn.commit()
         conn.close()
         logging.info(f"Task {task_id} marked as completed by Third Officer")
@@ -85,23 +78,18 @@ def mark_task_completed(task_id):
         logging.error(f"Failed to mark task {task_id} as completed: {str(e)}")
         return False
 
-# Setup HTTP session with retries
 session = requests.Session()
 retries = Retry(total=5, backoff_factor=0.2, status_forcelist=[500, 502, 503, 504])
 session.mount('http://', HTTPAdapter(max_retries=retries))
 
-# API base URL
 API_BASE_URL = "http://api:8000"
 
-# Authentication
 def check_password():
     st.title("Third Officer Maintenance Dashboard")
     st.subheader("Authentication Required")
-
     with st.form("login_form"):
         password = st.text_input("Password:", type="password")
         submitted = st.form_submit_button("Login")
-
         if submitted:
             if password == "ThirdOfficer2025":
                 st.session_state.authenticated = True
@@ -112,22 +100,16 @@ def check_password():
                 logging.warning("Authentication failed: Invalid password")
                 st.error("Invalid password. Please try again.")
 
-    if st.button("Debug Session State"):
-        st.write(f"Authenticated: {st.session_state.authenticated}")
-
-# Main dashboard
 def main_dashboard():
     st.title("Third Officer Maintenance Dashboard")
     st.header("STCW A-II/1 & SOLAS Compliance")
     logging.info("Rendering main dashboard")
 
-    # Logout button
     if st.sidebar.button("Logout"):
         st.session_state.authenticated = False
         logging.info("User logged out")
         st.experimental_rerun()
 
-    # Real-Time SEA-LION Alerts
     st.subheader("SEA-LION Real-Time Alerts")
     if st.button("Refresh Alerts"):
         endpoint = "alerts/overdue"
@@ -161,7 +143,6 @@ def main_dashboard():
                 st.error("No cached alerts available")
                 logging.warning("No cached alerts available")
 
-    # Maintenance Schedules
     st.subheader("Maintenance Schedules")
     try:
         conn = get_db()
@@ -175,7 +156,6 @@ def main_dashboard():
         st.error(f"Failed to load maintenance schedules: {str(e)}")
         logging.error(f"Failed to load maintenance schedules: {str(e)}")
 
-    # Complete Maintenance Task
     st.subheader("Complete Maintenance Task")
     with st.form("task_completion_form"):
         task_id = st.number_input("Task ID", min_value=1, step=1)
@@ -186,7 +166,6 @@ def main_dashboard():
             else:
                 st.error(f"Failed to mark task {task_id} as completed")
 
-    # Training Records
     st.subheader("Crew Training Records (STCW A-II/1)")
     try:
         conn = get_db()
@@ -200,7 +179,32 @@ def main_dashboard():
         st.error(f"Failed to load training records: {str(e)}")
         logging.error(f"Failed to load training records: {str(e)}")
 
-    # Prometheus Metrics Visualization
+    st.subheader("Add Training Record")
+    with st.form("training_form"):
+        name = st.text_input("Crew Name")
+        training_type = st.text_input("Training Type")
+        completion_date = st.date_input("Completion Date")
+        expiry_date = st.date_input("Expiry Date")
+        submitted = st.form_submit_button("Add Training")
+        if submitted:
+            try:
+                response = session.post(
+                    f"{API_BASE_URL}/training/add",
+                    json={
+                        "name": name,
+                        "training_type": training_type,
+                        "completion_date": str(completion_date),
+                        "expiry_date": str(expiry_date)
+                    },
+                    timeout=5
+                )
+                response.raise_for_status()
+                st.success(f"Training added: {training_type} for {name}")
+                logging.info(f"Training added: {training_type} for {name}")
+            except requests.RequestException as e:
+                st.error(f"Failed to add training: {str(e)}")
+                logging.error(f"Failed to add training: {str(e)}")
+
     st.subheader("API Performance Metrics")
     endpoint = "metrics"
     try:
@@ -235,11 +239,9 @@ def main_dashboard():
             st.error("No cached metrics available")
             logging.warning("No cached metrics available")
 
-    # Compliance Summary
     st.subheader("Compliance Status")
     st.write("System aligns with STCW A-II/1, SOLAS III/20, II-2/9, MSC.428(98)")
 
-# Main logic
 logging.info(f"Session state authenticated: {st.session_state.authenticated}")
 if not st.session_state.authenticated:
     check_password()

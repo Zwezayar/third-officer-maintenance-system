@@ -1,6 +1,5 @@
 global:
   scrape_interval: 15s
-
 scrape_configs:
   - job_name: 'third-officer-api'
     static_configs:

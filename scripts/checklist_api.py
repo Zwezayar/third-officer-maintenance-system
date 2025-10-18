@@ -1,99 +1,62 @@
-from fastapi import FastAPI, HTTPException, Query
-from pydantic import BaseModel
-from typing import List
-import json, os
-from datetime import datetime, timezone
+from fastapi import FastAPI, Request
+from fastapi.responses import PlainTextResponse
+import sqlite3
+from datetime import datetime
+from prometheus_client import Counter, Histogram, generate_latest
+import time
+import logging
 
-app = FastAPI(title="Third-Officer Maintenance API", version="1.1")
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
-BASE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.abspath(os.path.join(BASE, ".."))
-SCENARIOS_FILE = os.path.join(ROOT, "data_sources", "training", "scenarios.json")
-COMPLETED_FILE = os.path.join(ROOT, "data_sources", "training", "completed_trainings.json")
-PREDICTIONS_FILE = os.path.join(ROOT, "docs", "task3_final_predictions.json")
+app = FastAPI()
 
-def load_json(path, default):
-    if os.path.exists(path):
-        with open(path, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return default
+# Prometheus metrics
+api_requests_total = Counter('api_requests_total', 'Total API requests', ['endpoint'])
+api_request_latency_seconds = Histogram('api_request_latency_seconds', 'API request latency', ['endpoint'])
 
-def save_json(path, obj):
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(obj, f, ensure_ascii=False, indent=2)
-
-predictions = load_json(PREDICTIONS_FILE, [])
-scenarios = load_json(SCENARIOS_FILE, {}).get("scenarios", [])
-completed_trainings = load_json(COMPLETED_FILE, [])
-
-class CompletedTraining(BaseModel):
-    scenario_id: int
-    crew_id: str
-    notes: str = ""
+def get_db():
+    conn = sqlite3.connect("/app/database/ship_maintenance.db")
+    conn.row_factory = sqlite3.Row
+    return conn
 
 @app.get("/health")
-def health_check():
-    return {
-        "server": "running",
-        "predictions": bool(predictions),
-        "schedule": True,
-        "checklists": True,
-        "predictions_count": len(predictions)
-    }
+async def health_check():
+    start_time = time.time()
+    api_requests_total.labels(endpoint="/health").inc()
+    latency = time.time() - start_time
+    api_request_latency_seconds.labels(endpoint="/health").observe(latency)
+    return {"status": "healthy"}
 
-@app.get("/predictions")
-def get_predictions():
-    return {"predictions": predictions}
-
-@app.get("/schedule/lsa")
-def get_lsa_schedule():
-    return {"schedule": "Weekly LSA checks per SOLAS III/20", "recommended_interval_days": 7}
-
-@app.get("/training/scenarios")
-def get_training_scenarios():
-    return {"scenarios": scenarios}
-
-@app.post("/crew/complete-training")
-def complete_training(
-    scenario_id: int = Query(..., ge=1),
-    crew_id: str = Query(..., min_length=1),
-    notes: str = Query("", max_length=200)
-):
-    scenario = next((s for s in scenarios if s["id"] == scenario_id), None)
-    if not scenario:
-        raise HTTPException(status_code=404, detail="Scenario not found")
-    record = {
-        "scenario_id": scenario_id,
-        "crew_id": crew_id,
-        "title": scenario.get("title"),
-        "notes": notes,
-        "completed_at": datetime.now(timezone.utc).isoformat()
-    }
-    completed_trainings.append(record)
-    save_json(COMPLETED_FILE, completed_trainings)
-    return {"status": "Training completed", "record": record}
-
-@app.get("/crew/trainings")
-def get_completed_trainings():
-    return {"completed_trainings": completed_trainings}
 @app.get("/alerts/overdue")
-def get_overdue_alerts():
+async def get_overdue_alerts():
+    start_time = time.time()
     conn = get_db()
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM maintenance_schedules WHERE next_due <= ?", (datetime.now().strftime("%Y-%m-%d"),))
-    overdue = [dict(row) for row in cursor.fetchall()]
+    cursor.execute("""
+        SELECT * FROM maintenance_schedules 
+        WHERE next_due < ?
+    """, (datetime.now().strftime("%Y-%m-%d"),))
+    alerts = [dict(row) for row in cursor.fetchall()]
     conn.close()
-    
-    alerts = [
-        {
-            "equipment": item["equipment"],
-            "task": item["task"],
-            "due_date": item["next_due"],
-            "regulation": item["regulation"],
-            "alert": f"Overdue: {item['task']} for {item['equipment']} due by {item['next_due']}"
-        }
-        for item in overdue
-    ]
+    api_requests_total.labels(endpoint="/alerts/overdue").inc()
+    latency = time.time() - start_time
+    api_request_latency_seconds.labels(endpoint="/alerts/overdue").observe(latency)
     return {"alerts": alerts}
 
+@app.get("/debug")
+async def debug():
+    return {"message": "Debug endpoint", "metrics_mounted": True}
+
+@app.get("/metrics", response_class=PlainTextResponse)
+async def metrics():
+    return generate_latest()
+
+# Debug middleware to log all requests
+@app.middleware("http")
+async def log_requests(request: Request, call_next):
+    logger.info(f"Request: {request.method} {request.url}")
+    response = await call_next(request)
+    logger.info(f"Response status: {response.status_code}")
+    return response
