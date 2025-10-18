@@ -14,8 +14,8 @@
     "SOLAS III/20, II-2/9: Traceable maintenance actions"
   ],
   "tests": {
-    "api_logging": "Logged /alerts/overdue to audit_log table and api_audit.log",
-    "dashboard_logging": "Logged login and alert actions to audit_log table and dashboard_audit.log",
+    "api_logging": "Logged /alerts/overdue, /health, /metrics to audit_log table and api_audit.log",
+    "dashboard_logging": "Logged login, alert fetch, and display to audit_log table and dashboard_audit.log",
     "offline_logging": "Logged cache usage in offline mode"
   },
   "git_commit": "$(git rev-parse HEAD)",
