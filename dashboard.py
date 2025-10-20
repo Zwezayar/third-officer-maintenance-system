@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import sqlite3
+import pickle
 import requests
 
 st.title("Third Officer Maintenance Dashboard")
@@ -37,5 +38,19 @@ try:
 except Exception as e:
     st.error(f"Error fetching metrics: {e}")
 
-conn = sqlite3.connect("/app/database/ship_maintenance.db")
-conn.close()
+try:
+    with open("/app/models/predictor.pkl", "rb") as f:
+        model = pickle.load(f)
+    with open("/app/models/encoder.pkl", "rb") as f:
+        le = pickle.load(f)
+    conn = sqlite3.connect("/app/database/ship_maintenance.db")
+    df = pd.read_sql_query("SELECT * FROM maintenance_schedules", conn)
+    conn.close()
+    df["equipment_encoded"] = le.transform(df["equipment"])
+    df["days_until_due"] = (pd.to_datetime(df["next_due"]) - pd.to_datetime("now")).dt.days
+    X = df[["equipment_encoded", "days_until_due"]]
+    df["failure_risk"] = model.predict_proba(X)[:, 1]
+    st.subheader("Predicted Failure Risks")
+    st.table(df[["equipment", "task", "next_due", "failure_risk"]])
+except Exception as e:
+    st.error(f"Error predicting failure risks: {e}")
