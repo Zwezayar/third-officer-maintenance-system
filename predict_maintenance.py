@@ -5,6 +5,12 @@ from sklearn.preprocessing import LabelEncoder
 import pickle
 import os
 
+class FallbackModel:
+    def __init__(self, probabilities):
+        self.probabilities = probabilities
+    def predict_proba(self, X):
+        return [[1 - p, p] for p in self.probabilities]
+
 os.makedirs("/app/models", exist_ok=True)
 conn = sqlite3.connect("/app/database/ship_maintenance.db")
 df = pd.read_sql_query("SELECT * FROM maintenance_schedules", conn)
@@ -18,13 +24,12 @@ y = (df["days_until_due"] < 30).astype(int)
 
 if len(set(y)) < 2:
     print("Warning: Only one class in target variable. Creating default probabilities.")
-    df["failure_risk"] = [0.9 if days < 30 else 0.1 for days in df["days_until_due"]]
-    with open("/app/models/predictor.pkl", "wb") as f:
-        pickle.dump({"predict_proba": lambda X: [[1 - p, p] for p in df["failure_risk"]]}, f)
+    probabilities = [0.9 if days < 30 else 0.1 for days in df["days_until_due"]]
+    model = FallbackModel(probabilities)
 else:
     model = LogisticRegression()
     model.fit(X, y)
-    with open("/app/models/predictor.pkl", "wb") as f:
-        pickle.dump(model, f)
+with open("/app/models/predictor.pkl", "wb") as f:
+    pickle.dump(model, f)
 with open("/app/models/encoder.pkl", "wb") as f:
     pickle.dump(le, f)
