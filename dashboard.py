@@ -26,7 +26,7 @@ try:
             st.subheader("API Request Metrics")
             st.table(df_metrics)
             st.subheader("API Requests Over Time")
-            response = requests.get("http://prometheus:9090/api/v1/query_range?query=api_requests_total&start=2025-10-18T00:00:00Z&end=2025-10-20T23:59:59Z&step=15s")
+            response = requests.get("http://prometheus:9090/api/v1/query_range?query=api_requests_total&start=2025-10-18T00:00:00Z&end=2025-10-20T23:59:59Z&step=300s")
             if response.status_code == 200 and response.json().get("status") == "success":
                 data = response.json()["data"]["result"]
                 if data:
