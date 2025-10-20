@@ -43,8 +43,8 @@ async def get_overdue_alerts():
             cursor.execute("""
                 SELECT id, equipment, task, last_completed, next_due
                 FROM maintenance_schedules
-                WHERE next_due < ?
-            """, (datetime.now().strftime("%Y-%m-%d"),))
+                WHERE next_due <= ?
+            """, (datetime.now().strftime("%Y-%m-%d %H:%M:%S"),))
             alerts = [
                 {"id": row[0], "equipment": row[1], "task": row[2],
                  "last_completed": row[3], "next_due": row[4]}
