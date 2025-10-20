@@ -53,10 +53,7 @@ try:
     df["equipment_encoded"] = le.transform(df["equipment"])
     df["days_until_due"] = (pd.to_datetime(df["next_due"]) - pd.to_datetime("2025-10-20")).dt.days
     X = df[["equipment_encoded", "days_until_due"]]
-    if isinstance(model, dict):
-        df["failure_risk"] = model["predict_proba"](X)[:, 1]
-    else:
-        df["failure_risk"] = model.predict_proba(X)[:, 1]
+    df["failure_risk"] = model.predict_proba(X)[:, 1]
     st.table(df[["equipment", "task", "next_due", "failure_risk"]])
 except Exception as e:
     st.write(f"Error predicting failure risks: {e}")
