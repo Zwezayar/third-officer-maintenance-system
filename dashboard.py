@@ -27,15 +27,18 @@ st.table(pd.DataFrame(metrics))
 
 # API Requests Over Time
 st.header("API Requests Over Time")
-response = requests.get("http://prometheus:9090/api/v1/query_range?query=api_requests_total&start=2025-10-20T00:00:00Z&end=2025-10-20T23:59:59Z&step=300s")
-data = response.json()["data"]["result"]
-if data:
-    df = pd.DataFrame(data[0]["values"], columns=["timestamp", "value"])
-    df["timestamp"] = pd.to_datetime(df["timestamp"], unit="s")
-    df["value"] = df["value"].astype(float)
-    st.line_chart(df.set_index("timestamp")["value"])
-else:
-    st.write("No data available")
+try:
+    response = requests.get("http://prometheus:9090/api/v1/query_range?query=api_requests_total&start=2025-10-20T00:00:00Z&end=2025-10-20T23:59:59Z&step=300s")
+    data = response.json()["data"]["result"]
+    if data:
+        df = pd.DataFrame(data[0]["values"], columns=["timestamp", "value"])
+        df["timestamp"] = pd.to_datetime(df["timestamp"], unit="s")
+        df["value"] = df["value"].astype(float)
+        st.line_chart(df.set_index("timestamp")["value"])
+    else:
+        st.write("No data available")
+except Exception as e:
+    st.write(f"Error fetching Prometheus data: {e}")
 
 # Predicted Failure Risks
 st.header("Predicted Failure Risks")
@@ -50,7 +53,10 @@ try:
     df["equipment_encoded"] = le.transform(df["equipment"])
     df["days_until_due"] = (pd.to_datetime(df["next_due"]) - pd.to_datetime("2025-10-20")).dt.days
     X = df[["equipment_encoded", "days_until_due"]]
-    df["failure_risk"] = model.predict_proba(X)[:, 1]
+    if isinstance(model, dict):
+        df["failure_risk"] = model["predict_proba"](X)[:, 1]
+    else:
+        df["failure_risk"] = model.predict_proba(X)[:, 1]
     st.table(df[["equipment", "task", "next_due", "failure_risk"]])
 except Exception as e:
     st.write(f"Error predicting failure risks: {e}")
