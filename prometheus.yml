@@ -1,5 +1,6 @@
 global:
-  scrape_interval: 15s
+  scrape_interval: 5s  # Reduced for testing
+  scrape_timeout: 5s
 scrape_configs:
   - job_name: 'api'
     static_configs:
