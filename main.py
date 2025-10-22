@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.responses import Response
 from prometheus_client import Counter, generate_latest
 import sqlite3
 
@@ -8,7 +9,7 @@ metrics_requests = Counter("api_requests_total", "Total API requests", ["endpoin
 @app.get("/metrics")
 async def metrics():
     metrics_requests.labels(endpoint="/metrics").inc()
-    return generate_latest()
+    return Response(content=generate_latest(), media_type="text/plain; version=0.0.4; charset=utf-8")
 
 @app.get("/maintenance")
 async def get_maintenance():
