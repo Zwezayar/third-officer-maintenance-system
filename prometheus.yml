@@ -5,7 +5,5 @@ scrape_configs:
   - job_name: 'api'
     metrics_path: /metrics
     scheme: http
-    scrape_protocols:
-      - PrometheusText0.0.4
     static_configs:
       - targets: ['third-officer-maintenance-system-api-1:8000']
