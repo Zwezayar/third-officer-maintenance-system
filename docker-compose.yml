@@ -1,46 +1,46 @@
 services:
+  prometheus:
+    image: prom/prometheus
+    container_name: third-officer-maintenance-system-prometheus-1
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    networks:
+      ship-net:
+        aliases:
+          - prometheus
   api:
     build:
       context: .
-      dockerfile: api/Dockerfile.api
+      dockerfile: Dockerfile.api
+    container_name: third-officer-maintenance-system-api-1
+    volumes:
+      - ./database:/app/database
+      - ./models:/app/models
     ports:
       - "8000:8000"
-    volumes:
-      - ./api:/app
-      - ./database:/app/database
-      - ./logs:/app/logs
-      - ./models:/app/models
     networks:
       - ship-net
   dashboard:
     build:
       context: .
       dockerfile: Dockerfile.dashboard
-    ports:
-      - "8501:8501"
+    container_name: third-officer-maintenance-system-dashboard-1
     volumes:
-      - ./dashboard:/app
       - ./database:/app/database
       - ./models:/app/models
-    networks:
-      - ship-net
-  prometheus:
-    image: prom/prometheus:latest
     ports:
-      - "9090:9090"
-    volumes:
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml
-    command:
-      - '--config.file=/etc/prometheus/prometheus.yml'
-      - '--web.enable-lifecycle'
+      - "8501:8501"
     networks:
       - ship-net
   grafana:
-    image: grafana/grafana:latest
+    image: grafana/grafana
+    container_name: third-officer-maintenance-system-grafana-1
     ports:
       - "3000:3000"
     networks:
       - ship-net
 networks:
   ship-net:
-    driver: bridge
+    name: third-officer-maintenance-system_ship-net

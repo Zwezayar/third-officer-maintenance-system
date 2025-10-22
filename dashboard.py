@@ -28,7 +28,7 @@ st.table(pd.DataFrame(metrics))
 # API Requests Over Time
 st.header("API Requests Over Time")
 try:
-    response = requests.get("http://prometheus:9090/api/v1/query_range?query=api_requests_total&start=2025-10-20T00:00:00Z&end=2025-10-20T23:59:59Z&step=300s")
+    response = requests.get("http://prometheus:9090/api/v1/query_range?query=api_requests_total&start=2025-10-20T00:00:00Z&end=2025-10-22T23:59:59Z&step=300s")
     data = response.json()["data"]["result"]
     if data:
         df = pd.DataFrame(data[0]["values"], columns=["timestamp", "value"])
