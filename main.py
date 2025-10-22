@@ -1,5 +1,5 @@
-from fastapi import FastAPI
-from prometheus_client import Counter, generate_latest
+from fastapi import FastAPI, Response
+from prometheus_client import Counter, generate_latest, REGISTRY
 import sqlite3
 from datetime import datetime
 
@@ -15,7 +15,7 @@ def get_db_connection():
 @app.get("/metrics")
 async def metrics():
     api_requests.labels(endpoint="/metrics").inc()
-    return generate_latest()
+    return Response(content=generate_latest(REGISTRY), media_type="text/plain; version=0.0.4; charset=utf-8")
 
 @app.get("/maintenance")
 async def maintenance():

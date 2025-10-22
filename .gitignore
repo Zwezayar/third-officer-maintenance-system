@@ -34,3 +34,4 @@ logs/*.log
 .vscode/
 .idea/
 third-officer-maintenance-system-backup-*.tar.gz
+database/maintenance.db

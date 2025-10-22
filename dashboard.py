@@ -1,59 +1,68 @@
 import streamlit as st
-import pandas as pd
-import sqlite3
-import pickle
 import requests
-from datetime import datetime
+import pandas as pd
+from datetime import datetime, date
+import sqlite3
+import json
 
 st.title("Third Officer Maintenance Dashboard")
 
-# Overdue Maintenance Alerts
-st.header("Overdue Maintenance Alerts")
-conn = sqlite3.connect("/app/database/ship_maintenance.db")
-df = pd.read_sql_query("SELECT * FROM maintenance_schedules WHERE next_due <= ?", conn, params=(datetime.now().strftime('%Y-%m-%d'),))
-conn.close()
-st.table(df)
-
-# API Request Metrics
-st.header("API Request Metrics")
-response = requests.get("http://api:8000/metrics")
-metrics = []
-for line in response.text.splitlines():
-    if line.startswith("api_requests_total"):
-        endpoint = line.split('{endpoint="')[1].split('"}')[0]
-        value = float(line.split(' ')[-1])
-        metrics.append({"metric": endpoint, "value": value})
-st.table(pd.DataFrame(metrics))
-
-# API Requests Over Time
-st.header("API Requests Over Time")
+# Fetch maintenance schedules from API
 try:
-    response = requests.get("http://prometheus:9090/api/v1/query_range?query=api_requests_total&start=2025-10-20T00:00:00Z&end=2025-10-22T23:59:59Z&step=300s")
+    response = requests.get("http://third-officer-maintenance-system-api-1:8000/maintenance")
+    response.raise_for_status()
+    schedules = response.json()["schedules"]
+except requests.RequestException as e:
+    st.error(f"Error fetching maintenance data: {e}")
+    schedules = []
+
+# Overdue maintenance alerts
+st.subheader("Overdue Maintenance Alerts")
+today = date.today()
+overdue = []
+for s in schedules:
+    due_date = datetime.strptime(s[4], "%Y-%m-%d").date()
+    if due_date <= today:
+        overdue.append(s)
+if overdue:
+    df = pd.DataFrame(overdue, columns=["ID", "Equipment", "Task", "Start Date", "Due Date"])
+    st.table(df)
+else:
+    st.write("No overdue tasks.")
+
+# Fetch API metrics from Prometheus
+try:
+    response = requests.get("http://third-officer-maintenance-system-prometheus-1:9090/api/v1/query", params={"query": 'api_requests_total'})
+    response.raise_for_status()
+    metrics = response.json()["data"]["result"]
+    metrics_data = [{"Endpoint": m["metric"]["endpoint"], "Requests": float(m["value"][1])} for m in metrics]
+    st.subheader("API Request Metrics")
+    df_metrics = pd.DataFrame(metrics_data)
+    st.table(df_metrics)
+except requests.RequestException as e:
+    st.error(f"Error fetching Prometheus data: {e}")
+
+# API requests over time
+st.subheader("API Requests Over Time")
+try:
+    response = requests.get("http://third-officer-maintenance-system-prometheus-1:9090/api/v1/query_range", params={
+        "query": 'rate(api_requests_total[5m])',
+        "start": (datetime.now() - pd.Timedelta(minutes=30)).timestamp(),
+        "end": datetime.now().timestamp(),
+        "step": "15s"
+    })
+    response.raise_for_status()
     data = response.json()["data"]["result"]
     if data:
-        df = pd.DataFrame(data[0]["values"], columns=["timestamp", "value"])
-        df["timestamp"] = pd.to_datetime(df["timestamp"], unit="s")
-        df["value"] = df["value"].astype(float)
-        st.line_chart(df.set_index("timestamp")["value"])
+        times = pd.date_range(start=datetime.now() - pd.Timedelta(minutes=30), end=datetime.now(), freq="15s")
+        values = [float(v["value"][1]) for v in data[0]["values"]]
+        chart_data = pd.DataFrame({"Time": times[:len(values)], "Rate": values})
+        st.line_chart(chart_data.set_index("Time"))
     else:
-        st.write("No data available")
-except Exception as e:
-    st.write(f"Error fetching Prometheus data: {e}")
+        st.write("No data available for chart.")
+except requests.RequestException as e:
+    st.error(f"Error fetching Prometheus chart data: {e}")
 
-# Predicted Failure Risks
-st.header("Predicted Failure Risks")
-try:
-    with open("/app/models/predictor.pkl", "rb") as f:
-        model = pickle.load(f)
-    with open("/app/models/encoder.pkl", "rb") as f:
-        le = pickle.load(f)
-    conn = sqlite3.connect("/app/database/ship_maintenance.db")
-    df = pd.read_sql_query("SELECT * FROM maintenance_schedules", conn)
-    conn.close()
-    df["equipment_encoded"] = le.transform(df["equipment"])
-    df["days_until_due"] = (pd.to_datetime(df["next_due"]) - pd.to_datetime("2025-10-20")).dt.days
-    X = df[["equipment_encoded", "days_until_due"]]
-    df["failure_risk"] = model.predict_proba(X)[:, 1]
-    st.table(df[["equipment", "task", "next_due", "failure_risk"]])
-except Exception as e:
-    st.write(f"Error predicting failure risks: {e}")
+# Placeholder for AI predictions (to be implemented)
+st.subheader("Predicted Failure Risks")
+st.write("AI model not yet implemented.")
