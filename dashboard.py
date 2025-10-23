@@ -70,11 +70,15 @@ for _ in range(3):  # Retry up to 3 times
         )
         response.raise_for_status()
         data = response.json()["data"]["result"]
-        if data:
+        st.write(f"Debug: Prometheus response: {json.dumps(data, indent=2)}")  # Debug output
+        if data and len(data) > 0 and "values" in data[0]:
             times = pd.date_range(start=datetime.now() - pd.Timedelta(minutes=30), end=datetime.now(), freq="15s")
-            values = [float(v["value"][1]) for v in data[0]["values"]]
-            chart_data = pd.DataFrame({"Time": times[:len(values)], "Rate": values})
-            st.line_chart(chart_data.set_index("Time"))
+            values = [float(v[1]) for v in data[0]["values"] if len(v) > 1]  # Simplified parsing
+            if values:
+                chart_data = pd.DataFrame({"Time": times[:len(values)], "Rate": values})
+                st.line_chart(chart_data.set_index("Time"))
+            else:
+                st.write("No valid data points for chart.")
             break
         else:
             st.write("No data available for chart.")
