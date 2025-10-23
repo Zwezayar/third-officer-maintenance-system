@@ -1,15 +1,15 @@
 services:
   api:
+    container_name: third-officer-maintenance-system-api-1
     build:
       context: .
       dockerfile: Dockerfile.api
     ports:
       - "8000:8000"
-    volumes:
-      - ./database:/app/database
     networks:
       - ship-net
   dashboard:
+    container_name: third-officer-maintenance-system-dashboard-1
     build:
       context: .
       dockerfile: Dockerfile.dashboard
@@ -18,7 +18,8 @@ services:
     networks:
       - ship-net
   prometheus:
-    image: prom/prometheus
+    container_name: third-officer-maintenance-system-prometheus-1
+    image: prom/prometheus:latest
     ports:
       - "9090:9090"
     volumes:
@@ -26,7 +27,8 @@ services:
     networks:
       - ship-net
   grafana:
-    image: grafana/grafana
+    container_name: third-officer-maintenance-system-grafana-1
+    image: grafana/grafana:latest
     ports:
       - "3000:3000"
     networks:
