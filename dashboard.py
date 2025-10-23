@@ -35,12 +35,12 @@ else:
 # Fetch API metrics from Prometheus with retry
 st.subheader("API Request Metrics")
 metrics_data = []
-for _ in range(3):  # Retry up to 3 times
+for _ in range(5):  # Increased retries
     try:
         response = requests.get(
             "http://third-officer-maintenance-system-prometheus-1:9090/api/v1/query",
             params={"query": 'api_requests_total'},
-            timeout=10
+            timeout=15
         )
         response.raise_for_status()
         metrics = response.json()["data"]["result"]
@@ -48,7 +48,7 @@ for _ in range(3):  # Retry up to 3 times
         break
     except requests.RequestException as e:
         st.warning(f"Retrying Prometheus query due to: {e}")
-        time.sleep(5)
+        time.sleep(10)
 if metrics_data:
     df_metrics = pd.DataFrame(metrics_data)
     st.table(df_metrics)
@@ -58,7 +58,7 @@ else:
 # API requests over time
 st.subheader("API Requests Over Time")
 chart_data = None
-for _ in range(3):  # Retry up to 3 times
+for _ in range(5):  # Increased retries
     try:
         response = requests.get(
             "http://third-officer-maintenance-system-prometheus-1:9090/api/v1/query_range",
@@ -68,7 +68,7 @@ for _ in range(3):  # Retry up to 3 times
                 "end": datetime.now().timestamp(),
                 "step": "15s"
             },
-            timeout=10
+            timeout=15
         )
         response.raise_for_status()
         data = response.json()["data"]["result"]
@@ -93,7 +93,7 @@ for _ in range(3):  # Retry up to 3 times
             break
     except requests.RequestException as e:
         st.warning(f"Retrying Prometheus chart query due to: {e}")
-        time.sleep(5)
+        time.sleep(10)
 if chart_data is None:
     st.error("Failed to fetch Prometheus chart data after retries.")
 
@@ -109,7 +109,8 @@ try:
         days_overdue = (today - due_date).days
         equip_encoded = le_equip.transform([s[1]])[0]
         task_encoded = le_task.transform([s[2]])[0]
-        features = [[equip_encoded, task_encoded, days_overdue]]
+        features = pd.DataFrame([[equip_encoded, task_encoded, days_overdue]], 
+                              columns=["Equipment", "Task", "Days Overdue"])
         risk = model.predict_proba(features)[0][1]  # Probability of failure
         risk_level = "High" if risk > 0.7 else "Medium" if risk > 0.3 else "Low"
         prediction_data.append([s[1], s[2], risk_level, f"{risk:.2%}"])

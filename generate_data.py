@@ -6,13 +6,15 @@ import random
 equipment = ["Lifeboat 1", "Fire Extinguisher A", "Engine Room Pump"]
 tasks = ["Inspection", "Pressure Test", "Lubrication"]
 data = []
-for _ in range(100):
+for _ in range(200):  # Increased to 200 for better training
     equip = random.choice(equipment)
     task = random.choice(tasks)
     start_date = datetime.now() - timedelta(days=random.randint(30, 365))
     due_date = start_date + timedelta(days=random.randint(30, 90))
     days_overdue = (datetime.now().date() - due_date.date()).days
-    failure = 1 if days_overdue > 30 or random.random() < 0.2 else 0  # Simulate failures
+    # Higher failure probability for overdue tasks
+    failure_prob = min(0.9, 0.2 + (days_overdue / 30) * 0.3 if days_overdue > 0 else 0.1)
+    failure = 1 if random.random() < failure_prob else 0
     data.append([equip, task, start_date.strftime("%Y-%m-%d"), due_date.strftime("%Y-%m-%d"), days_overdue, failure])
 
 df = pd.DataFrame(data, columns=["Equipment", "Task", "Start Date", "Due Date", "Days Overdue", "Failure"])
