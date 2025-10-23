@@ -9,6 +9,31 @@ from sklearn.preprocessing import LabelEncoder
 
 st.title("Third Officer Maintenance Dashboard")
 
+# Form for adding new maintenance task
+st.subheader("Add New Maintenance Task")
+with st.form("maintenance_form"):
+    equipment = st.selectbox("Equipment", ["Lifeboat 1", "Fire Extinguisher A", "Engine Room Pump"])
+    task = st.selectbox("Task", ["Inspection", "Pressure Test", "Lubrication"])
+    start_date = st.date_input("Start Date")
+    due_date = st.date_input("Due Date")
+    submit_button = st.form_submit_button("Add Task")
+    if submit_button:
+        try:
+            response = requests.post(
+                "http://third-officer-maintenance-system-api-1:8000/maintenance",
+                json={
+                    "equipment": equipment,
+                    "task": task,
+                    "start_date": start_date.strftime("%Y-%m-%d"),
+                    "due_date": due_date.strftime("%Y-%m-%d")
+                },
+                timeout=10
+            )
+            response.raise_for_status()
+            st.success(response.json()["message"])
+        except requests.RequestException as e:
+            st.error(f"Error adding task: {e}")
+
 # Fetch maintenance schedules from API
 try:
     response = requests.get("http://third-officer-maintenance-system-api-1:8000/maintenance", timeout=10)
@@ -35,7 +60,7 @@ else:
 # Fetch API metrics from Prometheus with retry
 st.subheader("API Request Metrics")
 metrics_data = []
-for _ in range(5):  # Increased retries
+for _ in range(5):
     try:
         response = requests.get(
             "http://third-officer-maintenance-system-prometheus-1:9090/api/v1/query",
@@ -58,7 +83,7 @@ else:
 # API requests over time
 st.subheader("API Requests Over Time")
 chart_data = None
-for _ in range(5):  # Increased retries
+for _ in range(5):
     try:
         response = requests.get(
             "http://third-officer-maintenance-system-prometheus-1:9090/api/v1/query_range",
@@ -72,7 +97,7 @@ for _ in range(5):  # Increased retries
         )
         response.raise_for_status()
         data = response.json()["data"]["result"]
-        st.write(f"Debug: Prometheus response: {json.dumps(data, indent=2)}")  # Debug output
+        st.write(f"Debug: Prometheus response: {json.dumps(data, indent=2)}")
         if data:
             times = pd.date_range(start=datetime.now() - pd.Timedelta(minutes=30), end=datetime.now(), freq="15s")
             chart_data = pd.DataFrame({"Time": times})
@@ -111,7 +136,7 @@ try:
         task_encoded = le_task.transform([s[2]])[0]
         features = pd.DataFrame([[equip_encoded, task_encoded, days_overdue]], 
                               columns=["Equipment", "Task", "Days Overdue"])
-        risk = model.predict_proba(features)[0][1]  # Probability of failure
+        risk = model.predict_proba(features)[0][1]
         risk_level = "High" if risk > 0.7 else "Medium" if risk > 0.3 else "Low"
         prediction_data.append([s[1], s[2], risk_level, f"{risk:.2%}"])
     if prediction_data:
