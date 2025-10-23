@@ -71,12 +71,18 @@ for _ in range(3):  # Retry up to 3 times
         response.raise_for_status()
         data = response.json()["data"]["result"]
         st.write(f"Debug: Prometheus response: {json.dumps(data, indent=2)}")  # Debug output
-        if data and len(data) > 0 and "values" in data[0]:
+        if data:
             times = pd.date_range(start=datetime.now() - pd.Timedelta(minutes=30), end=datetime.now(), freq="15s")
-            values = [float(v[1]) for v in data[0]["values"] if len(v) > 1]  # Simplified parsing
-            if values:
-                chart_data = pd.DataFrame({"Time": times[:len(values)], "Rate": values})
-                st.line_chart(chart_data.set_index("Time"))
+            chart_data = pd.DataFrame({"Time": times})
+            for metric in data:
+                endpoint = metric["metric"]["endpoint"]
+                values = [float(v[1]) for v in metric["values"] if len(v) > 1]
+                timestamps = [pd.to_datetime(float(v[0]), unit="s") for v in metric["values"] if len(v) > 1]
+                df_temp = pd.DataFrame({"Time": timestamps, endpoint: values})
+                chart_data = chart_data.merge(df_temp, on="Time", how="left")
+            chart_data = chart_data.fillna(0).set_index("Time")
+            if not chart_data.empty:
+                st.line_chart(chart_data)
             else:
                 st.write("No valid data points for chart.")
             break
@@ -86,7 +92,7 @@ for _ in range(3):  # Retry up to 3 times
     except requests.RequestException as e:
         st.warning(f"Retrying Prometheus chart query due to: {e}")
         time.sleep(5)
-if not chart_data:
+if chart_data is None:
     st.error("Failed to fetch Prometheus chart data after retries.")
 
 # Placeholder for AI predictions
