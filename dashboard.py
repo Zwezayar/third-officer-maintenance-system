@@ -4,6 +4,8 @@ import pandas as pd
 from datetime import datetime, date
 import time
 import json
+import joblib
+from sklearn.preprocessing import LabelEncoder
 
 st.title("Third Officer Maintenance Dashboard")
 
@@ -95,6 +97,26 @@ for _ in range(3):  # Retry up to 3 times
 if chart_data is None:
     st.error("Failed to fetch Prometheus chart data after retries.")
 
-# Placeholder for AI predictions
+# AI predictions
 st.subheader("Predicted Failure Risks")
-st.write("AI model not yet implemented.")
+try:
+    model = joblib.load("failure_model.pkl")
+    le_equip = joblib.load("le_equip.pkl")
+    le_task = joblib.load("le_task.pkl")
+    prediction_data = []
+    for s in schedules:
+        due_date = datetime.strptime(s[4], "%Y-%m-%d").date()
+        days_overdue = (today - due_date).days
+        equip_encoded = le_equip.transform([s[1]])[0]
+        task_encoded = le_task.transform([s[2]])[0]
+        features = [[equip_encoded, task_encoded, days_overdue]]
+        risk = model.predict_proba(features)[0][1]  # Probability of failure
+        risk_level = "High" if risk > 0.7 else "Medium" if risk > 0.3 else "Low"
+        prediction_data.append([s[1], s[2], risk_level, f"{risk:.2%}"])
+    if prediction_data:
+        df_predictions = pd.DataFrame(prediction_data, columns=["Equipment", "Task", "Risk Level", "Failure Probability"])
+        st.table(df_predictions)
+    else:
+        st.write("No predictions available.")
+except Exception as e:
+    st.error(f"Error loading AI model: {e}")
