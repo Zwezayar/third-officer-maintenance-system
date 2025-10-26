@@ -1,101 +1,81 @@
 import streamlit as st
+import pandas as pd
+import os
+from weasyprint import HTML
 import requests
-from datetime import datetime
 
-# ------------------------------
-# Config
-# ------------------------------
-BASE_URL = "http://127.0.0.1:8000"
+st.title("Third Officer Maintenance System")
+st.write("Manage maintenance schedules and export reports for compliance with STCW A-II/1.")
 
-# ------------------------------
-# Page Setup
-# ------------------------------
-st.set_page_config(page_title="Third Officer Dashboard", layout="wide")
-st.title("⚓ Third Officer Maintenance Dashboard")
+storage_types = ["Deck Maintenance", "Safety Equipment", "Navigation Equipment"]
+storage_type = st.selectbox("Select Storage Type", storage_types)
 
-# ------------------------------
-# Health Status
-# ------------------------------
-st.subheader("Ship System Health")
-try:
-    health = requests.get(f"{BASE_URL}/health").json()
-    st.success(f"Status: {health.get('status', 'Unknown')}")
-    st.info(f"Uptime: {health.get('uptime', 'Unknown')}")
-    st.caption(f"Last checked: {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')} UTC")
-except Exception as e:
-    st.error(f"Failed to fetch health: {e}")
+storage_files = {
+    "Deck Maintenance": ["deck_schedule.xlsx", "deck_inspection.pdf"],
+    "Safety Equipment": ["safety_checks.csv", "lifeboat_maintenance.xlsx"],
+    "Navigation Equipment": ["radar_logs.xlsx", "gps_maintenance.csv"]
+}
 
-# ------------------------------
-# Maintenance Schedule
-# ------------------------------
-st.subheader("Maintenance Schedule")
-try:
-    schedule = requests.get(f"{BASE_URL}/schedule/lsa").json()
-    for item in schedule.get("schedules", []):
-        st.write(f"**{item['equipment']}**: Next due {item['next_due']} (Last completed {item['last_completed']})")
-except Exception as e:
-    st.error(f"Failed to fetch schedule: {e}")
+selected_storage_file = st.selectbox(f"Select {storage_type} File", storage_files[storage_type])
 
-# ------------------------------
-# SEA-LION Alerts
-# ------------------------------
-st.subheader("SEA-LION Alerts")
-try:
-    alerts = requests.get(f"{BASE_URL}/alerts").json()
-    if alerts.get("alerts"):
-        for alert in alerts["alerts"]:
-            alert_type = alert["type"]
-            msg = alert["message"]
-            if alert_type == "critical":
-                st.error(f"❗ {msg}")
-            elif alert_type == "warning":
-                st.warning(f"⚠️ {msg}")
-            else:
-                st.info(f"ℹ️ {msg}")
+file_path = os.path.join("data", selected_storage_file)
+if os.path.exists(file_path):
+    if selected_storage_file.endswith(('.xlsx', '.xls')):
+        df_storage = pd.read_excel(file_path)
+    elif selected_storage_file.endswith('.csv'):
+        df_storage = pd.read_csv(file_path)
+    elif selected_storage_file.endswith('.pdf'):
+        df_storage = None
+        st.write("PDF file selected. Display not supported, but export is available.")
     else:
-        st.success("No active alerts")
-except Exception as e:
-    st.error(f"Failed to fetch alerts: {e}")
+        df_storage = None
+        st.error("Unsupported file format")
+    if df_storage is not None:
+        st.write(f"{storage_type} Data")
+        st.dataframe(df_storage)
+else:
+    st.error(f"File {file_path} not found")
 
-# ------------------------------
-# Checklist Items
-# ------------------------------
-st.subheader("Daily Checklist")
-try:
-    checklist = requests.get(f"{BASE_URL}/checklist").json()
-    for task in checklist.get("checklist", []):
-        st.checkbox(task)
-except Exception as e:
-    st.error(f"Failed to fetch checklist: {e}")
-
-# ------------------------------
-# Crew Trainings
-# ------------------------------
-st.subheader("Crew Trainings")
-try:
-    trainings = requests.get(f"{BASE_URL}/crew/trainings").json()
-    for training in trainings.get("completed_trainings", []):
-        crew_id = training["crew_id"]
-        scenario_id = training["scenario_id"]
-        completed = training["completed"]
-        st.write(f"Crew {crew_id} - Scenario {scenario_id}: {'✅ Completed' if completed else '❌ Not Completed'}")
-except Exception as e:
-    st.error(f"Failed to fetch crew trainings: {e}")
-
-# ------------------------------
-# Complete Training Button
-# ------------------------------
-st.subheader("Mark Training as Completed")
-crew_input = st.text_input("Crew ID", "")
-scenario_input = st.number_input("Scenario ID", min_value=1, step=1)
-if st.button("Mark Completed"):
-    if crew_input:
+if st.button(f"Export {storage_type} File to PDF"):
+    if selected_storage_file.endswith(('.xlsx', '.xls', '.csv')):
         try:
-            resp = requests.post(f"{BASE_URL}/crew/complete-training",
-                                 params={"crew_id": crew_input, "scenario_id": scenario_input})
-            st.success(resp.json().get("status", "Training completed"))
+            html_content = df_storage.to_html()
+            HTML(string=html_content).write_pdf(f"{storage_type.lower().replace(' ', '_')}.pdf")
+            st.success(f"Exported to {storage_type.lower().replace(' ', '_')}.pdf")
         except Exception as e:
-            st.error(f"Failed to mark training completed: {e}")
+            st.error(f"Error exporting to PDF: {e}")
     else:
-        st.warning("Please enter a Crew ID")
+        st.error("PDF export not supported for PDF files")
 
+st.write("Fetch Maintenance Schedules from FastAPI")
+if st.button("Get Maintenance Schedules"):
+    try:
+        response = requests.get("http://localhost:8001/maintenance")
+        if response.status_code == 200:
+            schedules = response.json().get("schedules", [])
+            if schedules:
+                df_schedules = pd.DataFrame(schedules, columns=["ID", "Equipment", "Task", "Start Date", "Due Date"])
+                st.write("Maintenance Schedules")
+                st.dataframe(df_schedules)
+            else:
+                st.warning("No schedules found")
+        else:
+            st.error(f"Failed to fetch schedules: {response.status_code}")
+    except requests.RequestException as e:
+        st.error(f"Error connecting to FastAPI: {e}")
+
+st.write("AI-Powered Maintenance Insights")
+query = st.text_input("Ask about maintenance procedures (e.g., 'How to inspect lifeboats?')")
+if st.button("Ask AI"):
+    if query:
+        try:
+            response = requests.post("http://localhost:11434/api/generate", json={"model": "llama3", "prompt": query})
+            if response.status_code == 200:
+                result = response.json().get("response", "No response from AI")
+                st.write("AI Response:", result)
+            else:
+                st.error(f"Failed to get AI response: {response.status_code}")
+        except requests.RequestException as e:
+            st.error(f"Error connecting to Ollama: {e}")
+    else:
+        st.warning("Please enter a query")

@@ -1,38 +1,25 @@
+version: '3.8'
 services:
-  api:
-    container_name: third-officer-maintenance-system-api-1
+  streamlit:
     build:
       context: .
-      dockerfile: Dockerfile.api
-    ports:
-      - "8000:8000"
-    networks:
-      - ship-net
-  dashboard:
-    container_name: third-officer-maintenance-system-dashboard-1
-    build:
-      context: .
-      dockerfile: Dockerfile.dashboard
+      dockerfile: Dockerfile.streamlit
     ports:
       - "8501:8501"
-    networks:
-      - ship-net
+    volumes:
+      - ./:/app
+  fastapi:
+    build:
+      context: .
+      dockerfile: Dockerfile.fastapi
+    ports:
+      - "8001:8001"
+    command: uvicorn main:app --host 0.0.0.0 --port 8001
+    volumes:
+      - ./database:/app/database
   prometheus:
-    container_name: third-officer-maintenance-system-prometheus-1
-    image: prom/prometheus:latest
+    image: prom/prometheus
     ports:
       - "9090:9090"
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
-    networks:
-      - ship-net
-  grafana:
-    container_name: third-officer-maintenance-system-grafana-1
-    image: grafana/grafana:latest
-    ports:
-      - "3000:3000"
-    networks:
-      - ship-net
-networks:
-  ship-net:
-    driver: bridge

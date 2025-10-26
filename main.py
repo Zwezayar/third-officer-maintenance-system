@@ -12,6 +12,11 @@ def get_db_connection():
     conn.row_factory = sqlite3.Row
     return conn
 
+@app.get("/")
+async def root():
+    api_requests.labels(endpoint="/").inc()
+    return {"message": "Welcome to the Third Officer Maintenance System API"}
+
 @app.get("/metrics")
 async def metrics():
     api_requests.labels(endpoint="/metrics").inc()
